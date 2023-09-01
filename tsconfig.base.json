@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@doit/server/orm": ["libs/server/orm/src/index.ts"]
+      "@doit/server/orm": ["libs/server/orm/src/index.ts"],
+      "@doit/server/todos": ["libs/server/todos/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
