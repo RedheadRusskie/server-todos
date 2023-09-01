@@ -7,4 +7,5 @@ import { ToDosService } from './server-todos.service';
   providers: [ToDosService],
   exports: [],
 })
-export class ServerTodosModule {}
+
+export class ToDosModule {}

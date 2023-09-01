@@ -1,13 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { ToDo } from './interfaces';
+import { ToDo } from './interfaces/todo';
 
 @Injectable()
 export class ToDosService {
-  private readonly ToDos: Array<ToDo>;
-
-  constructor() {
-    this.ToDos = [];
-  }
+  private readonly ToDos: Array<ToDo> = [];
 
   add(todo: ToDo) {
     this.ToDos.push(todo);
