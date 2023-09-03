@@ -1,6 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { AddTodoDto } from './dto/add-todos.dto';
 import { ToDosService } from './server-todos.service';
+import { ParseStringPipe } from './pipes/ParseStringPipe';
 
 @Controller('todos')
 export class ToDosController {
@@ -17,12 +18,12 @@ export class ToDosController {
   }
 
   @Get(':id')
-  async findRecordById(@Param() params: string) {
-    return this.todosService.findRecordById(params);
+  async findRecordById(@Param('id', new ParseStringPipe()) id: string) {
+    return this.todosService.findRecordById(id);
   }
 
   @Delete(':id')
-  async removeRecordById(@Param() params: string) {
-    this.todosService.removeRecordById(params);
+  async removeRecordById(@Param('id', new ParseStringPipe()) id: string) {
+    this.todosService.removeRecordById(id);
   }
 }
