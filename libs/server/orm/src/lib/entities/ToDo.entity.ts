@@ -1,20 +1,26 @@
-import { Entity, ManyToOne, PrimaryKey, Property } from '@mikro-orm/core';
-import { v4 as uuidv4 } from 'uuid';
-import { User } from './User.entity';
+import {
+  Entity,
+  ManyToOne,
+  PrimaryKey,
+  Property,
+  TextType,
+  UuidType,
+} from '@mikro-orm/core';
+import { DoitUser } from './User.entity';
 
-@Entity()
+@Entity({ tableName: 'todo' })
 export class ToDo {
   @PrimaryKey({ type: 'uuid' })
-  id: string = uuidv4();
+  id!: UuidType;
 
-  @ManyToOne(() => User)
-  user!: User;
+  @ManyToOne(() => DoitUser, { fieldName: 'id' })
+  user!: DoitUser;
 
   @Property()
   name!: string;
 
   @Property()
-  body!: string;
+  body!: TextType;
 
   @Property()
   complete!: boolean;

@@ -1,26 +1,29 @@
 import { Injectable } from '@nestjs/common';
 import { ToDo } from './interfaces/todo';
+import { UuidType } from '@mikro-orm/core';
+import { OrmService } from '../../../orm/src/lib/orm.service';
 
 @Injectable()
 export class ToDosService {
-  private readonly ToDos: Array<ToDo> = [];
+  constructor(private readonly ormService: OrmService) {}
 
-  add(todo: ToDo) {
-    this.ToDos.push(todo);
+  async add(todo: ToDo) {
+    await this.ormService.add(todo);
   }
 
-  getAll() {
-    return this.ToDos;
+  async getAll() {
+    await this.ormService.getAll();
   }
 
-  findRecordById(id: string) {
-    return this.ToDos.find((toDo) => toDo.id === id);
+  async findRecordById(id: UuidType) {
+    return this.ormService.findRecordById(id);
   }
 
-  removeRecordById(id: string) {
-    const foundRecord = this.findRecordById(id);
-    const foundRecordIndex = this.ToDos.indexOf(foundRecord as ToDo);
+  async removeRecordById(id: UuidType) {
+    return this.ormService.removeRecordById(id);
+  }
 
-    if (foundRecordIndex > -1) this.ToDos.splice(foundRecordIndex, 1);
+  async updateRecordById(id: UuidType, updatedRecord: ToDo) {
+    this.ormService.updateRecordById(id, updatedRecord);
   }
 }

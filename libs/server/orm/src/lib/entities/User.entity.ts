@@ -1,11 +1,16 @@
-import { Entity, OneToMany, PrimaryKey, Property } from '@mikro-orm/core';
-import { v4 as uuidv4 } from 'uuid';
+import {
+  Entity,
+  OneToMany,
+  PrimaryKey,
+  Property,
+  UuidType,
+} from '@mikro-orm/core';
 import { ToDo } from './ToDo.entity';
 
-@Entity()
-export class User {
+@Entity({ tableName: 'user' })
+export class DoitUser {
   @PrimaryKey({ type: 'uuid' })
-  id: string = uuidv4();
+  id!: UuidType;
 
   @OneToMany(() => ToDo, (todo) => todo.user)
   todos!: ToDo[];

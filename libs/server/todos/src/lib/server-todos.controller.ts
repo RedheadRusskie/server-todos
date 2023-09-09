@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
 import { AddTodoDto } from './dto/add-todos.dto';
 import { ToDosService } from './server-todos.service';
-import { ParseStringPipe } from './pipes/ParseStringPipe';
+import { UuidType } from '@mikro-orm/core';
 
 @Controller('todos')
 export class ToDosController {
@@ -18,12 +18,12 @@ export class ToDosController {
   }
 
   @Get(':id')
-  async findRecordById(@Param('id', new ParseStringPipe()) id: string) {
+  async findRecordById(@Param('id') id: UuidType) {
     return this.todosService.findRecordById(id);
   }
 
   @Delete(':id')
-  async removeRecordById(@Param('id', new ParseStringPipe()) id: string) {
+  async removeRecordById(@Param('id') id: UuidType) {
     this.todosService.removeRecordById(id);
   }
 }

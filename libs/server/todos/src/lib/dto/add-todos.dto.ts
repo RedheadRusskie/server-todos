@@ -1,6 +1,10 @@
+import { TextType, UuidType } from '@mikro-orm/core';
+import { User } from '../interfaces/user';
+
 export class AddTodoDto {
-  id!: string;
+  id!: UuidType;
   name!: string;
-  body!: string;
+  body!: TextType;
   complete!: boolean;
+  user!: User;
 }
