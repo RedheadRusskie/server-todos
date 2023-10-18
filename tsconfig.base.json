@@ -13,10 +13,11 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@doit/server/orm": ["libs/server/orm/src/*"],
-      "@doit/server/todos": ["libs/server/todos/src/*"]
+      "@doit/server-orm": ["libs/server/orm/src/index.ts"],
+      "@doit/server-todos": ["libs/server/todos/src/index.ts"],
+      "@doit/server-user": ["libs/server/user/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

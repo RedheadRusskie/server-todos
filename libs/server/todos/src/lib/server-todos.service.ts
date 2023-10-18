@@ -1,29 +1,34 @@
 import { Injectable } from '@nestjs/common';
-import { ToDo } from './interfaces/todo';
-import { UuidType } from '@mikro-orm/core';
-import { OrmService } from '../../../orm/src/lib/orm.service';
+import { EntityRepository } from '@mikro-orm/postgresql';
+import { InjectRepository } from '@mikro-orm/nestjs';
+import { ToDoEntity } from './entities';
+import { AddTodoDto } from './dto/add-todo.dto';
 
 @Injectable()
 export class ToDosService {
-  constructor(private readonly ormService: OrmService) {}
+  constructor(
+    @InjectRepository(ToDoEntity)
+    private readonly toDoRepository: EntityRepository<ToDoEntity>
+  ) {}
 
-  async add(todo: ToDo) {
-    await this.ormService.add(todo);
+  async add(todo: AddTodoDto) {
+    console.log(todo);
+    // await this.toDoRepository.create(todo)
   }
 
   async getAll() {
-    await this.ormService.getAll();
+    // await this.ormService.getAll();
   }
 
-  async findRecordById(id: UuidType) {
-    return this.ormService.findRecordById(id);
+  async findRecordById(id: string) {
+    // return this.ormService.findRecordById(id);
   }
 
-  async removeRecordById(id: UuidType) {
-    return this.ormService.removeRecordById(id);
+  async removeRecordById(id: string) {
+    // return this.ormService.removeRecordById(id);
   }
 
-  async updateRecordById(id: UuidType, updatedRecord: ToDo) {
-    this.ormService.updateRecordById(id, updatedRecord);
+  async updateRecordById(id: string, updatedRecord: ToDoEntity) {
+    // this.ormService.updateRecordById(id, updatedRecord);
   }
 }

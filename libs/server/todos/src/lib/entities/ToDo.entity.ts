@@ -4,16 +4,16 @@ import {
   PrimaryKey,
   Property,
   TextType,
-  UuidType,
 } from '@mikro-orm/core';
 import { DoitUser } from './User.entity';
+import { v4 } from 'uuid';
 
 @Entity({ tableName: 'todo' })
-export class ToDo {
+export class ToDoEntity {
   @PrimaryKey({ type: 'uuid' })
-  id!: UuidType;
+  id: string = v4();
 
-  @ManyToOne(() => DoitUser, { fieldName: 'id' })
+  @ManyToOne(() => DoitUser, { joinColumn: 'id' })
   user!: DoitUser;
 
   @Property()
