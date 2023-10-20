@@ -23,20 +23,20 @@ export class UserController {
 
   @Get()
   async findAll(): Promise<AddUserDto[]> {
-    throw new NotImplementedException();
+    return this.userService.getAll();
   }
 
   @Get(':id')
   async findRecordById(
     @Param('id', ParseUUIDPipe) id: string
   ): Promise<AddUserDto> {
-    throw new NotImplementedException();
+    return this.userService.findRecordById(id);
   }
 
   @Delete(':id')
   async removeRecordById(
     @Param('id', ParseUUIDPipe) id: string
   ): Promise<void> {
-    throw new NotImplementedException();
+    this.userService.removeRecordById(id);
   }
 }
