@@ -6,7 +6,6 @@ import {
   NotImplementedException,
   Param,
   ParseUUIDPipe,
-  ParseUUIDPipeOptions,
   Patch,
   Post,
 } from '@nestjs/common';
