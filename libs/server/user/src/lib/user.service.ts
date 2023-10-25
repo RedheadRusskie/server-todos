@@ -44,9 +44,4 @@ export class UserService {
   async removeRecordById(id: string) {
     return this.userRepository.nativeDelete({ id });
   }
-
-  // TODO
-  async updateRecordById(id: string, updatedRecord: UserEntity) {
-    // this.ormService.updateRecordById(id, updatedRecord);
-  }
 }

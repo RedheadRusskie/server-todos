@@ -20,9 +20,6 @@ export class UserEntity {
   @Property()
   password!: string;
 
-  //   @OneToMany(() => ToDoEntity, (todo) => todo.user)
-  //   todos!: ToDoEntity[];
-
   @OneToMany(() => ToDoEntity, (todo) => todo.user)
   todos = new Collection<ToDoEntity>(this);
 }
