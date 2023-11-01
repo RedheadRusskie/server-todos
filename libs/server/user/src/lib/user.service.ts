@@ -41,6 +41,15 @@ export class UserService {
       });
   }
 
+  async findRecordByUsername(username: string) {
+    return this.userRepository
+      .findOneOrFail({ username })
+      .then((user) => user)
+      .catch(() => {
+        throw new NotFoundException('User not found.');
+      });
+  }
+
   async removeRecordById(id: string) {
     return this.userRepository.nativeDelete({ id });
   }
