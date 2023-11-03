@@ -32,6 +32,11 @@ export class UserController {
     return this.userService.findRecordById(id);
   }
 
+  @Get('getUserByUsername/:username')
+  async findUserbyId(@Param('username') username: string): Promise<UserDto> {
+    return this.userService.findRecordByUsername(username);
+  }
+
   @Delete(':id')
   async removeRecordById(
     @Param('id', ParseUUIDPipe) id: string
