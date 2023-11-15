@@ -1,4 +1,4 @@
-import { UserService } from '@doit/server-user';
+import { UserService } from '../user';
 import {
   HttpException,
   HttpStatus,

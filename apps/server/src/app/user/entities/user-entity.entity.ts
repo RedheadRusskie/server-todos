@@ -1,5 +1,4 @@
-// eslint-disable-next-line @nx/enforce-module-boundaries
-import { ToDoEntity } from '@doit/server-todos';
+import { ToDoEntity } from '../../todos';
 import {
   Collection,
   Entity,

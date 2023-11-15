@@ -6,7 +6,7 @@ import {
   TextType,
 } from '@mikro-orm/core';
 import { v4 } from 'uuid';
-import { UserEntity } from '@doit/server-user';
+import { UserEntity } from '../../user';
 
 @Entity({ tableName: 'todo' })
 export class ToDoEntity {
