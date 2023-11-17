@@ -9,10 +9,8 @@ import {
   Patch,
   Post,
 } from '@nestjs/common';
-import { AddTodoDto } from './dto/add-todo.dto';
 import { ToDosService } from './server-todos.service';
-import { ToDoDto } from './dto/todo.dto';
-import { UpdateToDoDto } from './dto/update-todo.dto';
+import { ToDoDto, AddTodoDto, UpdateToDoDto } from './dto';
 
 @Controller('todos')
 export class ToDosController {
@@ -20,8 +18,6 @@ export class ToDosController {
 
   @Post()
   async create(@Body() addTodoDto: AddTodoDto): Promise<ToDoDto> {
-    this.todosService.add(addTodoDto);
-
     throw new NotImplementedException();
   }
 

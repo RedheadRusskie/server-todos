@@ -1,10 +1,4 @@
-import {
-  Entity,
-  ManyToOne,
-  PrimaryKey,
-  Property,
-  TextType,
-} from '@mikro-orm/core';
+import { Entity, ManyToOne, PrimaryKey, Property, Ref } from '@mikro-orm/core';
 import { v4 } from 'uuid';
 import { UserEntity } from '../../user';
 
@@ -13,14 +7,14 @@ export class ToDoEntity {
   @PrimaryKey({ type: 'uuid' })
   id: string = v4();
 
-  @ManyToOne(() => UserEntity, { joinColumn: 'id' })
-  user!: UserEntity;
+  @ManyToOne(() => UserEntity, { joinColumn: 'id', ref: true })
+  user!: Ref<UserEntity>;
 
   @Property()
   name!: string;
 
   @Property()
-  body!: TextType;
+  body!: string;
 
   @Property()
   complete!: boolean;

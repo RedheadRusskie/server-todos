@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { ToDoEntity } from './entities';
-import { AddTodoDto } from './dto/add-todo.dto';
+import { AddTodoDto } from './dto';
 
 @Injectable()
 export class ToDosService {
