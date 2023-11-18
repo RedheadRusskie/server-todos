@@ -1,11 +1,7 @@
-import { UserService } from '../user';
-import {
-  HttpException,
-  HttpStatus,
-  Injectable,
-  UnauthorizedException,
-} from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
+import { UserEntity, UserService } from '../user';
+import { AuthDto } from './dto';
 
 @Injectable()
 export class AuthService {
@@ -14,18 +10,28 @@ export class AuthService {
     private jwtService: JwtService
   ) {}
 
-  async signIn(username: string, pass: string) {
+  async validateUser(
+    username: string,
+    password: string
+  ): Promise<UserEntity | null> {
     const user = await this.userService.findRecordByUsername(username);
 
-    if (!user) throw new HttpException('User not found.', HttpStatus.NOT_FOUND);
+    if (user.password !== password)
+      throw new UnauthorizedException('Incorrect password entered.');
 
-    if (user?.password !== pass)
-      throw new UnauthorizedException('Incorrect password.');
+    return user;
+  }
 
-    const payload = { sub: user.id, username: user.username };
+  async login(user: AuthDto): Promise<{ accessToken: string }> {
+    const payload = { sub: user.username };
+
+    const isValidUser = await this.validateUser(user.username, user.password);
+
+    if (!isValidUser)
+      throw new UnauthorizedException('Incorrect username or password');
 
     return {
-      access_token: await this.jwtService.signAsync(payload),
+      accessToken: this.jwtService.sign(payload),
     };
   }
 }
