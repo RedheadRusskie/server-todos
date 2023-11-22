@@ -22,7 +22,7 @@ export class ToDosController {
     @CurrentUser() user,
     @Body() addTodoDto: AddTodoDto
   ): Promise<ToDoDto> {
-    // return this.todosService.add(user, addTodoDto);
+    return this.todosService.add(user, addTodoDto);
     throw new NotImplementedException();
   }
 
@@ -33,7 +33,7 @@ export class ToDosController {
 
   @Get()
   async findAll(): Promise<ToDoDto[]> {
-    throw new NotImplementedException();
+    return this.todosService.getAll();
   }
 
   @Get(':id')

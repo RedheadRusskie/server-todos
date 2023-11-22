@@ -3,7 +3,7 @@ import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { ToDoEntity } from './entities';
 import { AddTodoDto } from './dto';
-import { CurrentUser } from '../user';
+import { CurrentUser, UserEntity } from '../user';
 
 @Injectable()
 export class ToDosService {
@@ -14,13 +14,18 @@ export class ToDosService {
   ) {}
 
   async add(@CurrentUser() user, todo: AddTodoDto) {
-    const todoToAdd = this.toDoRepository.create({ ...todo, user: user });
+    const todoToAdd = this.toDoRepository.create({
+      user: this.em.getReference(UserEntity, user.id),
+      ...todo,
+    });
+
     await this.em.persistAndFlush(todoToAdd);
+
     return todoToAdd;
   }
 
   async getAll() {
-    // await this.ormService.getAll();
+    return await this.toDoRepository.findAll();
   }
 
   async findRecordById(id: string) {
