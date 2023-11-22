@@ -11,13 +11,18 @@ import {
 } from '@nestjs/common';
 import { ToDosService } from './server-todos.service';
 import { ToDoDto, AddTodoDto, UpdateToDoDto } from './dto';
+import { CurrentUser } from '../user';
 
 @Controller('todos')
 export class ToDosController {
   constructor(private todosService: ToDosService) {}
 
   @Post()
-  async create(@Body() addTodoDto: AddTodoDto): Promise<ToDoDto> {
+  async create(
+    @CurrentUser() user,
+    @Body() addTodoDto: AddTodoDto
+  ): Promise<ToDoDto> {
+    // return this.todosService.add(user, addTodoDto);
     throw new NotImplementedException();
   }
 
