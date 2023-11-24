@@ -1,8 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { ToDoEntity } from './entities';
-import { AddTodoDto } from './dto';
+import { AddTodoDto, UpdateToDoDto } from './dto';
 import { CurrentUser, UserEntity } from '../user';
 
 @Injectable()
@@ -29,14 +29,23 @@ export class ToDosService {
   }
 
   async findRecordById(id: string) {
-    // return this.ormService.findRecordById(id);
+    return this.toDoRepository
+      .findOneOrFail({ id })
+      .then((todo) => todo)
+      .catch(() => {
+        throw new NotFoundException('To-do not found.');
+      });
   }
 
   async removeRecordById(id: string) {
-    // return this.ormService.removeRecordById(id);
+    return this.toDoRepository.nativeDelete({ id });
   }
 
-  async updateRecordById(id: string, updatedRecord: ToDoEntity) {
-    // this.ormService.updateRecordById(id, updatedRecord);
+  async updateRecordById(id: string, updatedRecord: UpdateToDoDto) {
+    await this.findRecordById(id);
+
+    await this.em.nativeUpdate(ToDoEntity, { id }, updatedRecord);
+
+    return updatedRecord;
   }
 }

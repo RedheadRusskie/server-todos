@@ -3,19 +3,25 @@ import {
   Controller,
   Delete,
   Get,
-  NotImplementedException,
   Param,
   ParseUUIDPipe,
-  Patch,
   Post,
+  Put,
 } from '@nestjs/common';
 import { ToDosService } from './server-todos.service';
 import { ToDoDto, AddTodoDto, UpdateToDoDto } from './dto';
 import { CurrentUser } from '../user';
+import { InjectRepository } from '@mikro-orm/nestjs';
+import { ToDoEntity } from './entities';
+import { EntityRepository } from '@mikro-orm/core';
 
 @Controller('todos')
 export class ToDosController {
-  constructor(private todosService: ToDosService) {}
+  constructor(
+    @InjectRepository(ToDoEntity)
+    private readonly toDoRepository: EntityRepository<ToDoEntity>,
+    private todosService: ToDosService
+  ) {}
 
   @Post()
   async create(
@@ -23,12 +29,14 @@ export class ToDosController {
     @Body() addTodoDto: AddTodoDto
   ): Promise<ToDoDto> {
     return this.todosService.add(user, addTodoDto);
-    throw new NotImplementedException();
   }
 
-  @Patch()
-  async update(@Body() updateToDoDto: UpdateToDoDto): Promise<ToDoDto> {
-    throw new NotImplementedException();
+  @Put(':id')
+  async updateRecordById(
+    @Param('id', ParseUUIDPipe) id: string,
+    @Body() updateToDoDto: UpdateToDoDto
+  ): Promise<UpdateToDoDto> {
+    return this.todosService.updateRecordById(id, updateToDoDto);
   }
 
   @Get()
@@ -40,13 +48,13 @@ export class ToDosController {
   async findRecordById(
     @Param('id', ParseUUIDPipe) id: string
   ): Promise<ToDoDto> {
-    throw new NotImplementedException();
+    return this.todosService.findRecordById(id);
   }
 
   @Delete(':id')
   async removeRecordById(
     @Param('id', ParseUUIDPipe) id: string
-  ): Promise<void> {
-    throw new NotImplementedException();
+  ): Promise<number> {
+    return this.todosService.removeRecordById(id);
   }
 }

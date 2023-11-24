@@ -1,12 +1,17 @@
-import {
-  IntersectionType,
-  OmitType,
-  PartialType,
-  PickType,
-} from '@nestjs/swagger';
+import { IntersectionType, PartialType, PickType } from '@nestjs/swagger';
 import { ToDoDto } from './todo.dto';
+import { IsBoolean, IsString } from 'class-validator';
 
 export class UpdateToDoDto extends IntersectionType(
-  PickType(ToDoDto, ['id']),
-  PartialType(OmitType(ToDoDto, ['id']))
-) {}
+  PickType(ToDoDto, ['user']),
+  PartialType(PickType(ToDoDto, ['id']))
+) {
+  @IsString()
+  name!: string;
+
+  @IsString()
+  body!: string;
+
+  @IsBoolean()
+  complete!: boolean;
+}
