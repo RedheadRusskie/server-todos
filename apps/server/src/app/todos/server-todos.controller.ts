@@ -11,23 +11,16 @@ import {
 import { ToDosService } from './server-todos.service';
 import { ToDoDto, AddTodoDto, UpdateToDoDto } from './dto';
 import { CurrentUser } from '../user';
-import { InjectRepository } from '@mikro-orm/nestjs';
-import { ToDoEntity } from './entities';
-import { EntityRepository } from '@mikro-orm/core';
 
 @Controller('todos')
 export class ToDosController {
-  constructor(
-    @InjectRepository(ToDoEntity)
-    private readonly toDoRepository: EntityRepository<ToDoEntity>,
-    private todosService: ToDosService
-  ) {}
+  constructor(private todosService: ToDosService) {}
 
   @Post()
   async create(
     @CurrentUser() user,
     @Body() addTodoDto: AddTodoDto
-  ): Promise<ToDoDto> {
+  ): Promise<AddTodoDto> {
     return this.todosService.add(user, addTodoDto);
   }
 

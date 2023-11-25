@@ -24,7 +24,7 @@ export class UserService {
     if (userExists) throw new ConflictException('Username must be unique.');
 
     const user = this.userRepository.create(dto);
-    this.em.persistAndFlush(user);
+    await this.em.persistAndFlush(user);
     return this.buildUserRO(user);
   }
 
@@ -60,7 +60,7 @@ export class UserService {
   }
 
   async removeRecordById(id: string) {
-    return this.userRepository.nativeDelete({ id });
+    return await this.userRepository.nativeDelete({ id });
   }
 
   buildUserRO(user: UserEntity) {

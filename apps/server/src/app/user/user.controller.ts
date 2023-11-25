@@ -20,14 +20,14 @@ export class UserController {
   }
 
   @Get()
-  async findAll(): Promise<AddUserDto[]> {
+  async findAll(): Promise<UserDto[]> {
     return this.userService.getAll();
   }
 
   @Get(':id')
   async findRecordById(
     @Param('id', ParseUUIDPipe) id: string
-  ): Promise<AddUserDto> {
+  ): Promise<UserDto> {
     return this.userService.findRecordById(id);
   }
 
@@ -39,7 +39,7 @@ export class UserController {
   @Delete(':id')
   async removeRecordById(
     @Param('id', ParseUUIDPipe) id: string
-  ): Promise<void> {
-    this.userService.removeRecordById(id);
+  ): Promise<number> {
+    return this.userService.removeRecordById(id);
   }
 }
