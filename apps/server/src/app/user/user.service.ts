@@ -36,24 +36,26 @@ export class UserService {
 
   async findRecord(
     criteria: { id?: string; username?: string },
-    notFoundMessage: string
+    notFoundMessage: string,
+    includeCredentials: boolean
   ) {
     return this.userRepository
       .findOneOrFail(criteria)
-      .then((user) => this.buildUserRO(user))
+      .then((user) => (!includeCredentials ? this.buildUserRO(user) : user))
       .catch(() => {
         throw new NotFoundException(notFoundMessage);
       });
   }
 
   async findRecordById(id: string) {
-    return this.findRecord({ id }, 'User not found with provided ID.');
+    return this.findRecord({ id }, 'User not found with provided ID.', false);
   }
 
   async findRecordByUsername(username: string) {
     return this.findRecord(
       { username },
-      'User not found with provided username.'
+      'User not found with provided username.',
+      false
     );
   }
 

@@ -14,7 +14,11 @@ export class AuthService {
     username: string,
     password: string
   ): Promise<UserEntity | null> {
-    const user = await this.userService.findRecordByUsername(username);
+    const user = await this.userService.findRecord(
+      { username },
+      'User not found with provided username.',
+      true
+    );
 
     if (user.password !== password)
       throw new UnauthorizedException('Incorrect password entered.');
