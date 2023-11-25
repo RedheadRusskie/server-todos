@@ -25,32 +25,45 @@ export class UserService {
 
     const user = this.userRepository.create(dto);
     this.em.persistAndFlush(user);
-    return user;
+    return this.buildUserRO(user);
   }
 
   async getAll() {
-    return await this.userRepository.findAll();
+    return (await this.userRepository.findAll()).map((user) =>
+      this.buildUserRO(user)
+    );
+  }
+
+  async findRecord(
+    criteria: { id?: string; username?: string },
+    notFoundMessage: string
+  ) {
+    return this.userRepository
+      .findOneOrFail(criteria)
+      .then((user) => this.buildUserRO(user))
+      .catch(() => {
+        throw new NotFoundException(notFoundMessage);
+      });
   }
 
   async findRecordById(id: string) {
-    return this.userRepository
-      .findOneOrFail({ id })
-      .then((user) => user)
-      .catch(() => {
-        throw new NotFoundException('User not found.');
-      });
+    return this.findRecord({ id }, 'User not found with provided ID.');
   }
 
   async findRecordByUsername(username: string) {
-    return this.userRepository
-      .findOneOrFail({ username })
-      .then((user) => user)
-      .catch(() => {
-        throw new NotFoundException('User not found.');
-      });
+    return this.findRecord(
+      { username },
+      'User not found with provided username.'
+    );
   }
 
   async removeRecordById(id: string) {
     return this.userRepository.nativeDelete({ id });
+  }
+
+  buildUserRO(user: UserEntity) {
+    delete user['password'];
+
+    return user;
   }
 }
