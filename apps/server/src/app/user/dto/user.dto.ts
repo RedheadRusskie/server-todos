@@ -1,4 +1,5 @@
-import { IsString, IsUUID } from 'class-validator';
+import { IsInt, IsString, IsUUID } from 'class-validator';
+import { UserPermissionEntity } from '../entities/user-permission.entity';
 
 export class UserDto {
   @IsUUID()
@@ -6,4 +7,7 @@ export class UserDto {
 
   @IsString()
   username!: string;
+
+  @IsInt()
+  role!: UserPermissionEntity;
 }

@@ -3,17 +3,30 @@
 */
 
 -- Users entity
-CREATE TABLE "DoitUser" (
+CREATE TABLE IF NOT EXISTS user (
   "id" UUID PRIMARY KEY NOT NULL,
-  "username" VARCHAR(30) NOT NULL
+  "username" VARCHAR(30) NOT NULL,
+  "password" VARCHAR(30) NOT NULL
 );
 
 
 -- ToDo entity
-CREATE TABLE IF NOT EXISTS "ToDo" (
+CREATE TABLE IF NOT EXISTS todo (
   "id" UUID PRIMARY KEY NOT NULL,
-  "user" UUID REFERENCES "user" ("id"),
+  "user" UUID REFERENCES "user" ("id") NOT NULL,
   "name" VARCHAR(30) NOT NULL,
   "body" TEXT,
-  "complete" BOOLEAN NOT NULL
+  "complete" BOOLEAN,
+  "role" INT NOT NULL
 );
+
+
+-- User permissions
+CREATE TABLE user_permissions ("id" INT PRIMARY KEY NOT NULL, "role" VARCHAR(30));
+
+
+-- Establish relationship between user and user permissions entities
+ALTER TABLE "user"
+  ADD CONSTRAINT fk_user_permission
+  FOREIGN KEY ("role") 
+  REFERENCES "user_permissions" ("id");
