@@ -8,6 +8,7 @@ import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { UserEntity } from './entities';
 import { AddUserDto } from './dto/add-user.dto';
+import { CurrentUser } from './decorators';
 
 @Injectable()
 export class UserService {
@@ -60,9 +61,7 @@ export class UserService {
     );
   }
 
-  async removeRecordById(id: string, req) {
-    const user = req.user;
-
+  async removeRecordById(@CurrentUser() user, id: string) {
     if (user.role.id !== 0 && user.id !== id)
       throw new UnauthorizedException('Unauthorized to remove other users.');
 

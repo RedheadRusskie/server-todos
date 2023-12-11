@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { UserController } from './user.controller';
-import { UserService } from './user.service';
+import { UserController } from './server-user.controller';
+import { UserService } from './server-user.service';
 import { MikroOrmModule } from '@mikro-orm/nestjs';
 import { UserEntity } from './entities';
 
