@@ -1,15 +1,14 @@
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { NestFactory, Reflector } from '@nestjs/core';
 import { AppModule } from './app/app.module';
-import { JwtAuthGuard } from './app/auth/guards';
+import { JwtAuthGuard, RolesGuard } from './app/auth/guards';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const reflector = app.get(Reflector);
-  app.useGlobalGuards(new JwtAuthGuard(reflector));
+  app.useGlobalGuards(new JwtAuthGuard(reflector), new RolesGuard(reflector));
   const globalPrefix = 'api';
   app.setGlobalPrefix(globalPrefix);
-
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,

@@ -2,6 +2,7 @@ import {
   ConflictException,
   Injectable,
   NotFoundException,
+  UnauthorizedException,
 } from '@nestjs/common';
 import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
@@ -59,7 +60,12 @@ export class UserService {
     );
   }
 
-  async removeRecordById(id: string) {
+  async removeRecordById(id: string, req) {
+    const user = req.user;
+
+    if (user.role.id !== 0 && user.id !== id)
+      throw new UnauthorizedException('Unauthorized to remove other users.');
+
     return await this.userRepository.nativeDelete({ id });
   }
 
