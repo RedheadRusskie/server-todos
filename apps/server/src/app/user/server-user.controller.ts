@@ -10,7 +10,7 @@ import {
 import { UserService } from './server-user.service';
 import { UserDto, AddUserDto } from './dto';
 import { Role } from '../auth/enums';
-import { RequiredRoles } from '../auth/decorators';
+import { IsPublic, RequiredRoles } from '../auth/decorators';
 import { CurrentUser } from './decorators';
 
 @Controller('users')
@@ -18,6 +18,7 @@ export class UserController {
   constructor(private userService: UserService) {}
 
   @Post()
+  @IsPublic()
   async create(@Body() addUserDto: AddUserDto): Promise<UserDto> {
     return this.userService.add(addUserDto);
   }
