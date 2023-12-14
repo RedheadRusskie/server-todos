@@ -14,4 +14,6 @@ export class UpdateToDoDto extends IntersectionType(
 
   @IsBoolean()
   complete!: boolean;
+
+  last_updated!: Date;
 }

@@ -18,4 +18,10 @@ export class ToDoEntity {
 
   @Property()
   complete!: boolean;
+
+  @Property({ type: 'date' })
+  added: Date = new Date();
+
+  @Property({ type: 'date', onUpdate: () => new Date() })
+  last_updated: Date = new Date();
 }

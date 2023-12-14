@@ -26,4 +26,10 @@ export class UserEntity {
 
   @OneToOne(() => UserPermissionEntity, { fieldName: 'role' })
   role!: UserPermissionEntity;
+
+  @Property({ type: 'date' })
+  added: Date = new Date();
+
+  @Property({ type: 'date', onUpdate: () => new Date() })
+  last_login: Date = new Date();
 }

@@ -9,6 +9,7 @@ import { InjectRepository } from '@mikro-orm/nestjs';
 import { UserEntity } from './entities';
 import { AddUserDto } from './dto/add-user.dto';
 import { CurrentUser } from './decorators';
+import { UpdateUserDto } from './dto';
 
 @Injectable()
 export class UserService {
@@ -66,6 +67,14 @@ export class UserService {
       throw new UnauthorizedException('Unauthorized to remove other users.');
 
     return await this.userRepository.nativeDelete({ id });
+  }
+
+  async updateUser(user: UpdateUserDto) {
+    const userToAdd = this.userRepository.create(user);
+
+    await this.em.persistAndFlush(userToAdd);
+
+    return this.buildUserRO(userToAdd);
   }
 
   buildUserRO(user: UserEntity) {

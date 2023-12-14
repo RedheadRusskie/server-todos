@@ -6,7 +6,9 @@
 CREATE TABLE IF NOT EXISTS user (
   "id" UUID PRIMARY KEY NOT NULL,
   "username" VARCHAR(30) NOT NULL,
-  "password" VARCHAR(30) NOT NULL
+  "password" VARCHAR(30) NOT NULL,
+  "added" TIMESTAMP NOT NULL,
+  "last_login" TIMESTAMP
 );
 
 
@@ -17,7 +19,9 @@ CREATE TABLE IF NOT EXISTS todo (
   "name" VARCHAR(30) NOT NULL,
   "body" TEXT,
   "complete" BOOLEAN,
-  "role" INT NOT NULL
+  "role" INT NOT NULL,
+  "added" TIMESTAMP NOT NULL,
+  "last_updated" TIMESTAMP NOT NULL
 );
 
 

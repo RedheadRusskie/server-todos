@@ -44,6 +44,7 @@ export class ToDosService {
     updatedRecord: UpdateToDoDto
   ) {
     const record = await this.findRecordById(id);
+    updatedRecord.last_updated = new Date();
     this.checkPermissions(user, record.user.id);
 
     await this.em.nativeUpdate(ToDoEntity, { id }, updatedRecord);
