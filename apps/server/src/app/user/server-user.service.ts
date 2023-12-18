@@ -6,6 +6,7 @@ import {
 } from '@nestjs/common';
 import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
+import bcrypt from 'bcrypt';
 import { UserEntity } from './entities';
 import { AddUserDto } from './dto/add-user.dto';
 import { CurrentUser } from './decorators';
@@ -27,6 +28,10 @@ export class UserService {
     if (userExists) throw new ConflictException('Username must be unique.');
 
     const user = this.userRepository.create(dto);
+    const salt = await bcrypt.genSalt();
+    const hashedPassword = await bcrypt.hash(user.password, salt);
+    user.password = hashedPassword;
+
     await this.em.persistAndFlush(user);
     return this.buildUserRO(user);
   }
@@ -58,7 +63,7 @@ export class UserService {
     return this.findRecord(
       { username },
       'User not found with provided username.',
-      false
+      true
     );
   }
 
@@ -69,17 +74,18 @@ export class UserService {
     return await this.userRepository.nativeDelete({ id });
   }
 
-  async updateUser(user: UpdateUserDto) {
-    const userToAdd = this.userRepository.create(user);
+  async updateUser(userDto: UpdateUserDto) {
+    const userToEdit = this.userRepository.create(userDto);
 
-    await this.em.persistAndFlush(userToAdd);
+    await this.em.persistAndFlush(userToEdit);
 
-    return this.buildUserRO(userToAdd);
+    return this.buildUserRO(userToEdit);
   }
 
   buildUserRO(user: UserEntity) {
-    delete user['password'];
+    const userRO = { ...user };
+    delete userRO['password'];
 
-    return user;
+    return userRO;
   }
 }

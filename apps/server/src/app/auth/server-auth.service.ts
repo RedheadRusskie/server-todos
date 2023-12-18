@@ -1,5 +1,6 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
+import bcrypt from 'bcrypt';
 import { UserEntity, UserService } from '../user';
 import { AuthDto } from './dto';
 
@@ -20,16 +21,21 @@ export class AuthService {
       true
     );
 
-    if (user.password !== password)
+    const passwordIsValid = await bcrypt.compare(password, user.password);
+
+    if (!passwordIsValid)
       throw new UnauthorizedException('Incorrect password entered.');
 
     return user;
   }
 
-  async login(user: AuthDto): Promise<{ accessToken: string }> {
-    const payload = { sub: user.username };
+  async login(userAuthDto: AuthDto): Promise<{ accessToken: string }> {
+    const payload = { sub: userAuthDto.username };
 
-    const isValidUser = await this.validateUser(user.username, user.password);
+    const isValidUser = await this.validateUser(
+      userAuthDto.username,
+      userAuthDto.password
+    );
 
     if (!isValidUser)
       throw new UnauthorizedException('Incorrect username or password');

@@ -19,6 +19,8 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
 
     if (!user) throw new UnauthorizedException('User not found.');
 
+    user.last_login = new Date();
+
     await this.userService.updateUser(user);
 
     return user;
