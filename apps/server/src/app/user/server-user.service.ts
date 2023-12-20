@@ -37,8 +37,8 @@ export class UserService {
   }
 
   async getAll() {
-    return (await this.userRepository.findAll()).map((user) =>
-      this.buildUserRO(user)
+    return (await this.userRepository.findAll({ populate: ['todos'] })).map(
+      (user) => this.buildUserRO(user)
     );
   }
 
@@ -48,7 +48,7 @@ export class UserService {
     includeCredentials: boolean
   ) {
     return this.userRepository
-      .findOneOrFail(criteria)
+      .findOneOrFail(criteria, { populate: ['todos'] })
       .then((user) => (!includeCredentials ? this.buildUserRO(user) : user))
       .catch(() => {
         throw new NotFoundException(notFoundMessage);
