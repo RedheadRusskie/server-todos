@@ -28,7 +28,7 @@ export class ToDosService {
 
     await this.em.persistAndFlush(todoToAdd);
 
-    return todoToAdd;
+    return { ...todoToAdd, user: todoToAdd.user.id };
   }
 
   async removeRecordById(@CurrentUser() user: UserDto, id: string) {
