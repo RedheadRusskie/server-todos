@@ -19,7 +19,6 @@ CREATE TABLE IF NOT EXISTS todo (
   "name" VARCHAR(30) NOT NULL,
   "body" TEXT,
   "complete" BOOLEAN,
-  "role" INT NOT NULL,
   "added" TIMESTAMP NOT NULL,
   "last_updated" TIMESTAMP NOT NULL
 );
