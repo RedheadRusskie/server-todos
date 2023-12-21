@@ -33,7 +33,7 @@ export class ToDosController {
     @CurrentUser() user,
     @Param('id', ParseUUIDPipe) id: string,
     @Body() updateToDoDto: UpdateToDoDto
-  ) {
+  ): Promise<UpdateToDoDto> {
     return this.todosService.updateRecordById(user, id, updateToDoDto);
   }
 
