@@ -9,7 +9,7 @@ import {
   Put,
 } from '@nestjs/common';
 import { ToDosService } from './server-todos.service';
-import { ToDoDto, AddTodoDto, UpdateToDoDto } from './dto';
+import { ToDoDto, AddTodoDto, UpdateToDoDto, TodoResponseDto } from './dto';
 import { CurrentUser } from '../user';
 import { RequiredRoles } from '../auth/decorators';
 import { Role } from '../auth/enums';
@@ -23,7 +23,7 @@ export class ToDosController {
   async create(
     @CurrentUser() user,
     @Body() addTodoDto: AddTodoDto
-  ): Promise<AddTodoDto> {
+  ): Promise<TodoResponseDto> {
     return this.todosService.add(user, addTodoDto);
   }
 
@@ -33,7 +33,7 @@ export class ToDosController {
     @CurrentUser() user,
     @Param('id', ParseUUIDPipe) id: string,
     @Body() updateToDoDto: UpdateToDoDto
-  ): Promise<UpdateToDoDto> {
+  ) {
     return this.todosService.updateRecordById(user, id, updateToDoDto);
   }
 
