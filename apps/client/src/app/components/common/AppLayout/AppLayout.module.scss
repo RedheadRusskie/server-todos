@@ -1,0 +1,16 @@
+.appBg {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Change height to min-height */
+  display: flex;
+  flex-direction: column; /* Change direction to column */
+  background: radial-gradient(circle at 30% 50%, #b9aaff 5%, transparent 70%),
+    radial-gradient(circle at 70% 50%, #a3d8f4 5%, transparent 70%), #ffffff;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  flex-grow: 1;
+}
