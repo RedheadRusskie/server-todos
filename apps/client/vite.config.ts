@@ -3,12 +3,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
+const clientPort = process.env.CLIENTPORT
+  ? parseInt(process.env.CLIENTPORT, 10)
+  : 4200;
+
 export default defineConfig({
   root: __dirname,
   cacheDir: '../../node_modules/.vite/apps/client',
 
   server: {
-    port: 4200,
+    port: clientPort,
     host: 'localhost',
   },
 

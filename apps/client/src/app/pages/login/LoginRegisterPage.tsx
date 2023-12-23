@@ -2,7 +2,7 @@ import { Box, Center, Flex, Heading, Image } from '@chakra-ui/react';
 import '@fontsource/merriweather';
 import loginIcon from '../../assets/login.svg';
 import { LoginForm } from '../../components/LoginForm/LoginForm';
-import { RegisterForm } from '../../components/common/RegisterForm/RegisterForm';
+import { RegisterForm } from '../../components/RegisterForm/RegisterForm';
 
 interface LoginRegisterPageProps {
   isFor: 'Login' | 'Register';
