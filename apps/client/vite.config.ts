@@ -14,6 +14,9 @@ export default defineConfig({
   server: {
     port: clientPort,
     host: 'localhost',
+    fs: {
+      allow: ['../../node_modules'],
+    },
   },
 
   preview: {

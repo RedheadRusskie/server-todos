@@ -13,28 +13,28 @@ import {
 import { useForm } from 'react-hook-form';
 import { LoginFormInput } from '../../interfaces/interfaces';
 import useAuth from '../../hooks/useAuth';
+import { FormErrorBox } from '../common/FormErrorBox/FormErrorBox';
 
 export const LoginForm: React.FC = () => {
-  const linkColor = useColorModeValue('#524166', '#ffffff');
+  const { login, isLoading, error } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<LoginFormInput>();
-
-  const { login, isLoading, error } = useAuth();
+  const linkColor = useColorModeValue('#524166', '#ffffff');
 
   const onSubmit = async (data: LoginFormInput) => {
     await login(data);
   };
-
-  console.log(error);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
       <FormControl>
         <Box marginBottom="2em">
           <Box marginY="0.7em">
+            {error && <FormErrorBox displayError={error} />}
+
             <FormLabel>Username</FormLabel>
             <Input
               placeholder="Username"
@@ -50,7 +50,7 @@ export const LoginForm: React.FC = () => {
               })}
             />
             {errors.username && (
-              <Text color="red">{String(errors.username.message)}</Text>
+              <Text color="red.500">{String(errors.username.message)}</Text>
             )}
           </Box>
 
@@ -71,7 +71,7 @@ export const LoginForm: React.FC = () => {
               })}
             />
             {errors.password && (
-              <Text color="red">{String(errors.password.message)}</Text>
+              <Text color="red.500">{String(errors.password.message)}</Text>
             )}
             <FormHelperText>
               <Flex align="center" justify="center">
@@ -84,7 +84,7 @@ export const LoginForm: React.FC = () => {
           </Box>
         </Box>
 
-        <Button type="submit" borderRadius={0} w="100%" isLoading={isLoading}>
+        <Button type="submit" isLoading={isLoading} borderRadius={0} w="100%">
           Log in
         </Button>
       </FormControl>

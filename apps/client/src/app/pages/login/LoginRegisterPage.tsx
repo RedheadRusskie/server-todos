@@ -1,5 +1,5 @@
 import { Box, Center, Flex, Heading, Image } from '@chakra-ui/react';
-import '@fontsource/merriweather';
+import '@fontsource-variable/montserrat';
 import loginIcon from '../../assets/login.svg';
 import { LoginForm } from '../../components/LoginForm/LoginForm';
 import { RegisterForm } from '../../components/RegisterForm/RegisterForm';
@@ -36,8 +36,9 @@ export const LoginRegisterPage: React.FC<LoginRegisterPageProps> = ({
           >
             <Heading
               as="h3"
+              color="#8582b2"
               size="4xl"
-              fontFamily="merriweather"
+              fontFamily="Montserrat Variable"
               fontWeight={800}
               marginTop="0.5em"
               marginBottom="0.5em"
