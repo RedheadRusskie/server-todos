@@ -10,13 +10,9 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom';
-import { useForm, SubmitHandler } from 'react-hook-form';
-
-interface LoginFormInput {
-  username: string;
-  password: string;
-}
+import { useForm } from 'react-hook-form';
+import { LoginFormInput } from '../../interfaces/interfaces';
+import useAuth from '../../hooks/useAuth';
 
 export const LoginForm: React.FC = () => {
   const linkColor = useColorModeValue('#524166', '#ffffff');
@@ -26,9 +22,13 @@ export const LoginForm: React.FC = () => {
     formState: { errors },
   } = useForm<LoginFormInput>();
 
-  const onSubmit: SubmitHandler<LoginFormInput> = (data) => {
-    console.log('Form submitted:', data);
+  const { login, isLoading, error } = useAuth();
+
+  const onSubmit = async (data: LoginFormInput) => {
+    await login(data);
   };
+
+  console.log(error);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
@@ -77,14 +77,14 @@ export const LoginForm: React.FC = () => {
               <Flex align="center" justify="center">
                 Don't have an account?{' '}
                 <Text color={linkColor} marginLeft="0.3em">
-                  <RouterLink to="/register">Click here.</RouterLink>
+                  Register <a href="/register">here.</a>
                 </Text>
               </Flex>
             </FormHelperText>
           </Box>
         </Box>
 
-        <Button type="submit" borderRadius={0} w="100%">
+        <Button type="submit" borderRadius={0} w="100%" isLoading={isLoading}>
           Log in
         </Button>
       </FormControl>

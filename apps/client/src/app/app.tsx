@@ -1,11 +1,7 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { LoginRegisterPage } from './pages/login/LoginRegisterPage';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
-
-const queryClient = new QueryClient();
+import { LoginRegisterPage } from './pages/login/LoginRegisterPage';
 
 const theme = extendTheme({
   styles: {
@@ -31,32 +27,29 @@ const theme = extendTheme({
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ChakraProvider theme={theme}>
-        <BrowserRouter>
-          <Routes>
-            <Route
-              index
-              element={
-                <AppLayout>
-                  <LoginRegisterPage isFor="Login" />
-                </AppLayout>
-              }
-              path="/login"
-            />
-            <Route
-              element={
-                <AppLayout>
-                  <LoginRegisterPage isFor="Register" />
-                </AppLayout>
-              }
-              path="/register"
-            />
-          </Routes>
-        </BrowserRouter>
-        <ReactQueryDevtools />
-      </ChakraProvider>
-    </QueryClientProvider>
+    <ChakraProvider theme={theme}>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            index
+            element={
+              <AppLayout>
+                <LoginRegisterPage isFor="Login" />
+              </AppLayout>
+            }
+            path="/login"
+          />
+          <Route
+            element={
+              <AppLayout>
+                <LoginRegisterPage isFor="Register" />
+              </AppLayout>
+            }
+            path="/register"
+          />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 
