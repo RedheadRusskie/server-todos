@@ -1,5 +1,6 @@
 import { Box, Center, Flex, Heading, Image } from '@chakra-ui/react';
 import '@fontsource-variable/montserrat';
+import { motion } from 'framer-motion';
 import loginIcon from '../../assets/login.svg';
 import { LoginForm } from '../../components/LoginForm/LoginForm';
 import { RegisterForm } from '../../components/RegisterForm/RegisterForm';
@@ -45,7 +46,15 @@ export const LoginRegisterPage: React.FC<LoginRegisterPageProps> = ({
             >
               Doit
             </Heading>
-            {isFor === 'Login' ? <LoginForm /> : <RegisterForm />}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5 }}
+              style={{ width: '100%' }}
+            >
+              {isFor === 'Login' ? <LoginForm /> : <RegisterForm />}
+            </motion.div>
           </Flex>
         </Center>
       </Box>

@@ -9,9 +9,9 @@ export const FormErrorBox: React.FC<FormErrorBoxProps> = ({ displayError }) => {
     <Box
       marginBottom="1em"
       p="0.5em 1em"
-      bgColor="red.100"
+      bg={`linear-gradient(to right, rgba(255, 0, 0, 0.1), rgba(255, 255, 255, 0))`}
       border="1px"
-      borderColor="red.500"
+      borderColor="red.100"
     >
       <Center>
         <Flex>

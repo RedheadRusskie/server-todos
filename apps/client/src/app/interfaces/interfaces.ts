@@ -24,6 +24,18 @@ export interface LoginFormInput {
   password: string;
 }
 
+export interface UserRegistrationPayload {
+  username: string;
+  password: string;
+  role: number;
+}
+
+export interface RegisterFormInput {
+  username: string;
+  password: string;
+  confirmPassword: string;
+}
+
 export interface ErrorResponse {
   message: string;
   statusCode: number;

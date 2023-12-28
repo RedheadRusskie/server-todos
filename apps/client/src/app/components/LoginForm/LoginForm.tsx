@@ -36,25 +36,25 @@ export const LoginForm: React.FC = () => {
     },
     onSuccess: (token: string) => {
       localStorage.setItem('accessToken', token);
+      setFormError(undefined);
     },
   });
 
   const onSubmit = (data: LoginFormInput) => {
-    setFormError(undefined);
     mutate(data);
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>
       <FormControl>
-        <Box marginBottom="2em">
+        <Box>
           {formError && <FormErrorBox displayError={formError} />}
 
           <Box marginY="0.7em">
             <FormLabel>Username</FormLabel>
             <Input
-              placeholder="Username"
               id="username"
+              placeholder="Username"
               variant="unstyled"
               borderBottom="1px solid lightgray"
               marginBottom="1em"
@@ -75,8 +75,8 @@ export const LoginForm: React.FC = () => {
           <Box marginY="0.7em">
             <FormLabel>Password</FormLabel>
             <Input
+              id="password"
               type="password"
-              id="current-password"
               placeholder="Password"
               variant="unstyled"
               borderBottom="1px solid lightgray"
@@ -95,6 +95,10 @@ export const LoginForm: React.FC = () => {
             )}
           </Box>
 
+          <Button isLoading={isLoading} type="submit" borderRadius={0} w="100%">
+            Sign in
+          </Button>
+
           <FormHelperText>
             <Flex align="center" justify="center">
               Don't have an account?{' '}
@@ -103,10 +107,6 @@ export const LoginForm: React.FC = () => {
               </Text>
             </Flex>
           </FormHelperText>
-
-          <Button isLoading={isLoading} type="submit" borderRadius={0} w="100%">
-            Log in
-          </Button>
         </Box>
       </FormControl>
     </form>
