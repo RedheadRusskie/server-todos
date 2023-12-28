@@ -1,7 +1,10 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from 'react-query';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
 import { LoginRegisterPage } from './pages/login/LoginRegisterPage';
+
+const queryClient = new QueryClient();
 
 const theme = extendTheme({
   styles: {
@@ -27,29 +30,31 @@ const theme = extendTheme({
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            index
-            element={
-              <AppLayout>
-                <LoginRegisterPage isFor="Login" />
-              </AppLayout>
-            }
-            path="/login"
-          />
-          <Route
-            element={
-              <AppLayout>
-                <LoginRegisterPage isFor="Register" />
-              </AppLayout>
-            }
-            path="/register"
-          />
-        </Routes>
-      </BrowserRouter>
-    </ChakraProvider>
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              index
+              element={
+                <AppLayout>
+                  <LoginRegisterPage isFor="Login" />
+                </AppLayout>
+              }
+              path="/login"
+            />
+            <Route
+              element={
+                <AppLayout>
+                  <LoginRegisterPage isFor="Register" />
+                </AppLayout>
+              }
+              path="/register"
+            />
+          </Routes>
+        </BrowserRouter>
+      </ChakraProvider>
+    </QueryClientProvider>
   );
 }
 

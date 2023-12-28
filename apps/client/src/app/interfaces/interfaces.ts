@@ -23,3 +23,8 @@ export interface LoginFormInput {
   username: string;
   password: string;
 }
+
+export interface ErrorResponse {
+  message: string;
+  statusCode: number;
+}
