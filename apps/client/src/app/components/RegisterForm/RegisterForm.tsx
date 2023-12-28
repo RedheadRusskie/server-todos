@@ -13,6 +13,7 @@ import {
   Input,
   Text,
   useColorModeValue,
+  useToast,
 } from '@chakra-ui/react';
 import {
   ErrorResponse,
@@ -21,19 +22,21 @@ import {
   UserRegistrationPayload,
 } from '../../interfaces/interfaces';
 import { FormErrorBox } from '../common/FormErrorBox/FormErrorBox';
+import { CustomToast } from '../common/CustomToast/CustomToast';
 
 export const RegisterForm: React.FC = () => {
-  const linkColor = useColorModeValue('#524166', '#ffffff');
-  const usersEndpoint = 'http://localhost:3000/api/users';
   const [formError, setFormError] = useState<string | undefined>();
-  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
     watch,
   } = useForm<RegisterFormInput>();
+  const linkColor = useColorModeValue('#524166', '#ffffff');
+  const navigate = useNavigate();
   const password = watch('password', '');
+  const toast = useToast();
+  const usersEndpoint = 'http://localhost:3000/api/users';
 
   const sendRegisterRequest = async (
     data: RegisterFormInput
@@ -45,6 +48,7 @@ export const RegisterForm: React.FC = () => {
     };
 
     const response = await axios.post(usersEndpoint, mutatedCredentials);
+
     return response.data;
   };
 
@@ -54,6 +58,13 @@ export const RegisterForm: React.FC = () => {
     },
     onSuccess: () => {
       setFormError(undefined);
+      toast({
+        position: 'top',
+        duration: 1500,
+        render: () => (
+          <CustomToast type="success" message="Successfully registered." />
+        ),
+      });
       navigate('/login');
     },
   });

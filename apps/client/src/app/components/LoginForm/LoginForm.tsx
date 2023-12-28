@@ -9,22 +9,25 @@ import {
   Input,
   Text,
   useColorModeValue,
+  useToast,
 } from '@chakra-ui/react';
 import { useMutation } from 'react-query';
 import axios, { AxiosError } from 'axios';
 import { useForm } from 'react-hook-form';
 import { FormErrorBox } from '../common/FormErrorBox/FormErrorBox';
 import { ErrorResponse, LoginFormInput } from '../../interfaces/interfaces';
+import { CustomToast } from '../common/CustomToast/CustomToast';
 
 export const LoginForm: React.FC = () => {
-  const loginEndpoint = 'http://localhost:3000/api/auth/login';
-  const linkColor = useColorModeValue('#524166', '#ffffff');
   const [formError, setFormError] = useState<string | undefined>();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<LoginFormInput>();
+  const toast = useToast();
+  const linkColor = useColorModeValue('#524166', '#ffffff');
+  const loginEndpoint = 'http://localhost:3000/api/auth/login';
 
   const sendLoginRequest = (data: LoginFormInput): Promise<string> => {
     return axios.post(loginEndpoint, data).then((res) => res.data.accessToken);
@@ -37,6 +40,13 @@ export const LoginForm: React.FC = () => {
     onSuccess: (token: string) => {
       localStorage.setItem('accessToken', token);
       setFormError(undefined);
+      toast({
+        position: 'top',
+        duration: 1500,
+        render: () => (
+          <CustomToast type="success" message="Successfully logged in." />
+        ),
+      });
     },
   });
 
