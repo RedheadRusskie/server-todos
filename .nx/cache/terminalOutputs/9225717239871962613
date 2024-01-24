@@ -1,0 +1,1949 @@
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:03:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:03:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:04:17 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/app/utils/sortTodosByUpdateDate.ts[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:04:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:04:57 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:05 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:19 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:25 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+[2m9:05:25 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:49: ERROR: Expected ":" but found ")"
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:25 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:49: ERROR: Expected ":" but found ")"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:4:49
+[33m  
+  [33mExpected ":" but found ")"[33m
+  2  |  
+  3  |  export const sortTodosByUpdateDate = (todos: Todo[]) => {
+  4  |    console.log('test date', todos?[0].last_updated);
+     |                                                   ^
+  5  |  
+  6  |    return todos
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+[2m9:05:32 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:33: ERROR: Expected identifier but found "?"
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:32 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:33: ERROR: Expected identifier but found "?"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:4:33
+[33m  
+  [33mExpected identifier but found "?"[33m
+  2  |  
+  3  |  export const sortTodosByUpdateDate = (todos: Todo[]) => {
+  4  |    console.log('test date', todos.?[0].last_updated);
+     |                                   ^
+  5  |  
+  6  |    return todos
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:05:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:07:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+[2m9:07:14 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:8:11: ERROR: Expected ";" but found "=>"
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:07:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:8:11: ERROR: Expected ";" but found "=>"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:8:11
+[33m  
+  [33mExpected ";" but found "=>"[33m
+  6  |    return todos
+  7  |      .sort
+  8  |      (a, b) => a.last_updated.getTime() - b.last_updated.getTime()
+     |             ^
+  9  |      ();
+  10 |  };
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:07:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:08:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:08:57 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:09:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:09:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:09:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:09:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:09:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:09:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:10:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:10:17 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:10:33 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:12:02 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x13)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:12:19 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x14)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:12:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x15)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:12:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x16)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:12:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x17)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:16:26 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x18)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x19)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x20)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x21)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:37 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x22)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x23)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x24)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:17:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x25)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:18:44 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x26)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:18:54 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x27)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:19:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x28)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:19:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x29)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:21:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x30)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:21:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x31)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:22:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x32)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:22:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x33)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:22:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x34)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:23:30 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:24:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:24:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:24:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:24:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:14 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx: Unexpected token (3:15)
+
+[0m [90m 1 |[31m [36mimport[31m { useQuery } [36mfrom[31m [32m'react-query'[31m[33m;[31m[0m
+[0m [90m 2 |[31m [36mimport[31m { [33mErrorResponse[31m[33m,[31m [33mTodo[31m } [36mfrom[31m [32m'../../interfaces/interfaces'[31m[33m;[31m[0m
+[0m[31m[1m>[22m[31m[90m 3 |[31m [36mimport[31m axios[33m,[31m {[33m,[31m [33mAxiosResponse[31m } [36mfrom[31m [32m'axios'[31m[33m;[31m[0m
+[0m [90m   |[31m                [31m[1m^[22m[31m[0m
+[0m [90m 4 |[31m [36mimport[31m { sortTodosByUpdateDate } [36mfrom[31m [32m'../../utils'[31m[33m;[31m[0m
+[0m [90m 5 |[31m[0m
+[0m [90m 6 |[31m [36mexport[31m [36mconst[31m [33mTodosPage[31m[33m:[31m [33mReact[31m[33m.[31m[33mFC[31m [33m=[31m () [33m=>[31m {[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m:3:15
+[33m  1  |  import { useQuery } from 'react-query';
+  2  |  import { ErrorResponse, Todo } from '../../interfaces/interfaces';
+  3  |  import axios, {, AxiosResponse } from 'axios';
+     |                 ^
+  4  |  import { sortTodosByUpdateDate } from '../../utils';
+  5  |  [39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.parseIdentifierName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12043:12)
+      at TypeScriptParserMixin.parseIdentifier (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12026:23)
+      at TypeScriptParserMixin.parseModuleExportName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14023:17)
+      at TypeScriptParserMixin.parseNamedImportSpecifiers (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14329:33)
+      at TypeScriptParserMixin.parseImportSpecifiersAndAfter (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14152:37)
+      at TypeScriptParserMixin.parseImport (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14145:17)
+      at TypeScriptParserMixin.parseImport (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9251:26)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12710:27)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12565:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseProgram (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12464:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12454:25)
+      at TypeScriptParserMixin.parse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14376:10)
+      at TypeScriptParserMixin.parse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9982:18)
+      at parse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14417:38)
+      at parser (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/transformation/index.js:21:50)
+      at run.next (<anonymous>)
+      at transform (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:261:32)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:223:11)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:189:28
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:113:33
+      at step (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:287:14)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:223:11)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:17 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:17 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx: Unexpected token (2:9)
+
+[0m [90m 1 |[31m [36mimport[31m { useQuery } [36mfrom[31m [32m'react-query'[31m[33m;[31m[0m
+[0m[31m[1m>[22m[31m[90m 2 |[31m [36mimport[31m { [33m,[31m [33mTodo[31m } [36mfrom[31m [32m'../../interfaces/interfaces'[31m[33m;[31m[0m
+[0m [90m   |[31m          [31m[1m^[22m[31m[0m
+[0m [90m 3 |[31m [36mimport[31m axios[33m,[31m { [33mAxiosResponse[31m } [36mfrom[31m [32m'axios'[31m[33m;[31m[0m
+[0m [90m 4 |[31m [36mimport[31m { sortTodosByUpdateDate } [36mfrom[31m [32m'../../utils'[31m[33m;[31m[0m
+[0m [90m 5 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m:2:9
+[33m  1  |  import { useQuery } from 'react-query';
+  2  |  import { , Todo } from '../../interfaces/interfaces';
+     |           ^
+  3  |  import axios, { AxiosResponse } from 'axios';
+  4  |  import { sortTodosByUpdateDate } from '../../utils';[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.parseIdentifierName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12043:12)
+      at TypeScriptParserMixin.parseIdentifier (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12026:23)
+      at TypeScriptParserMixin.parseModuleExportName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14023:17)
+      at TypeScriptParserMixin.parseNamedImportSpecifiers (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14329:33)
+      at TypeScriptParserMixin.parseImportSpecifiersAndAfter (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14152:37)
+      at TypeScriptParserMixin.parseImport (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14145:17)
+      at TypeScriptParserMixin.parseImport (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9251:26)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12710:27)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseModuleItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12565:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:36)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseProgram (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12464:10)
+      at TypeScriptParserMixin.parseTopLevel (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12454:25)
+      at TypeScriptParserMixin.parse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14376:10)
+      at TypeScriptParserMixin.parse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9982:18)
+      at parse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:14417:38)
+      at parser (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/transformation/index.js:21:50)
+      at run.next (<anonymous>)
+      at transform (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:261:32)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:223:11)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:189:28
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:113:33
+      at step (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:287:14)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/Users/ivankonnikov/Developer/doit/doit/node_modules/gensync/index.js:223:11)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:19 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:25:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:27:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:27:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:27:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:27:26 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:30:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:30:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:31:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:33:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:33:38 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/LoginForm/LoginForm.tsx: Missing semicolon. (44:14)
+
+[0m [90m 42 |[31m        {[0m
+[0m [90m 43 |[31m         accessToken[33m:[31m res[33m.[31mdata[33m.[31maccessToken[33m,[31m[0m
+[0m[31m[1m>[22m[31m[90m 44 |[31m         userId[33m:[31m res[33m.[31mdata[33m.[31muserId[33m,[31m[0m
+[0m [90m    |[31m               [31m[1m^[22m[31m[0m
+[0m [90m 45 |[31m       } [36mas[31m [36mconst[31m[33m;[31m[0m
+[0m [90m 46 |[31m     )[33m;[31m[0m
+[0m [90m 47 |[31m   }[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/LoginForm/LoginForm.tsx[39m:44:14
+[33m  42 |         {
+  43 |          accessToken: res.data.accessToken,
+  44 |          userId: res.data.userId,
+     |                ^
+  45 |        } as const;
+  46 |      );[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.semicolon (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3580:10)
+      at TypeScriptParserMixin.parseExpressionStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13158:10)
+      at TypeScriptParserMixin.parseExpressionStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9441:26)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12741:19)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12581:17)
+      at TypeScriptParserMixin.parseLabeledStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13151:95)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12739:19)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11935:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseExprListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12020:18)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11054:22)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10964:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10899:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9167:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10870:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10861:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10551:23)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:33:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:34:04 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:34:04 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/LoginForm/LoginForm.tsx: Unexpected token (41:4)
+
+[0m [90m 39 |[31m     data[33m:[31m [33mLoginFormInput[31m[0m
+[0m [90m 40 |[31m   )[33m:[31m [33mPromise[31m[33m<[31m{ accessToken[33m:[31m string[33m;[31m userId[33m:[31m string }[33m>[31m [33m=>[31m [0m
+[0m[31m[1m>[22m[31m[90m 41 |[31m     [36mreturn[31m axios[33m.[31mpost(loginEndpoint[33m,[31m data)[33m.[31mthen((res) [33m=>[31m {[0m
+[0m [90m    |[31m     [31m[1m^[22m[31m[0m
+[0m [90m 42 |[31m       [36mreturn[31m {[0m
+[0m [90m 43 |[31m         accessToken[33m:[31m res[33m.[31mdata[33m.[31maccessToken[33m,[31m[0m
+[0m [90m 44 |[31m         userId[33m:[31m res[33m.[31mdata[33m.[31muserId[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/LoginForm/LoginForm.tsx[39m:41:4
+[33m  39 |      data: LoginFormInput
+  40 |    ): Promise<{ accessToken: string; userId: string }> => 
+  41 |      return axios.post(loginEndpoint, data).then((res) => {
+     |      ^
+  42 |        return {
+  43 |          accessToken: res.data.accessToken,[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11257:16)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11928:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13259:91)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11935:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:34:08 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:34:13 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:35:21 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:35:23 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:35:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:35:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:35:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:35:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:36:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:38:13 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:38:14 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx: Unexpected token (34:28)
+
+[0m [90m 32 |[31m   [90m//   };[31m[0m
+[0m [90m 33 |[31m[0m
+[0m[31m[1m>[22m[31m[90m 34 |[31m   [36mconst[31m sendLoginRequest [33m=[31m ()[33m:[31m [33m=>[31m[0m
+[0m [90m    |[31m                             [31m[1m^[22m[31m[0m
+[0m [90m 35 |[31m     axios[33m.[31m[36mget[31m(todosEndpoint[33m,[31m data)[33m.[31mthen((res) [33m=>[31m {[0m
+[0m [90m 36 |[31m       [36mreturn[31m {[0m
+[0m [90m 37 |[31m         accessToken[33m:[31m res[33m.[31mdata[33m.[31maccessToken[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m:34:28
+[33m  32 |    //   };
+  33 |  
+  34 |    const sendLoginRequest = (): =>
+     |                              ^
+  35 |      axios.get(todosEndpoint, data).then((res) => {
+  36 |        return {[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11516:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13259:91)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11935:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13259:91)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:38:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:38:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:38:50 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx: Unexpected token, expected "," (37:2)
+
+[0m [90m 35 |[31m     axios[33m.[31m[36mget[31m(todosEndpoint)[33m.[31mthen((res) [33m=>[31m res[33m.[31mdata[0m
+[0m [90m 36 |[31m[0m
+[0m[31m[1m>[22m[31m[90m 37 |[31m   [36mconst[31m { data[33m,[31m status } [33m=[31m useQuery({[0m
+[0m [90m    |[31m   [31m[1m^[22m[31m[0m
+[0m [90m 38 |[31m     queryKey[33m:[31m [[32m'todos'[31m][33m,[31m[0m
+[0m [90m 39 |[31m     queryFn[33m:[31m fetchTodos[33m,[31m[0m
+[0m [90m 40 |[31m   })[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m:37:2
+[33m  35 |      axios.get(todosEndpoint).then((res) => res.data
+  36 |  
+  37 |    const { data, status } = useQuery({
+     |    ^
+  38 |      queryKey: ['todos'],
+  39 |      queryFn: fetchTodos,[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.unexpected (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3253:16)
+      at TypeScriptParserMixin.expect (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3585:28)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11040:14)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10964:29)
+      at TypeScriptParserMixin.parseSubscript (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10899:19)
+      at TypeScriptParserMixin.parseSubscript (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9167:18)
+      at TypeScriptParserMixin.parseSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10870:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10861:17)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11928:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13259:91)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11935:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:39:22 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:39:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:39:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:39:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:40:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:43:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:43:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:43:55 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:43:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:44:12 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:44:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:44:32 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:44:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x13)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:47:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x14)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:47:53 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx: Unexpected reserved word 'await'. (16:48)
+
+[0m [90m 14 |[31m   [90m//   const fetchTodos = async () => {[31m[0m
+[0m [90m 15 |[31m       [36mtry[31m {[0m
+[0m[31m[1m>[22m[31m[90m 16 |[31m         [36mconst[31m response[33m:[31m [33mAxiosResponse[31m[33m<[31m[33mTodo[31m[][33m>[31m [33m=[31m [36mawait[31m axios[33m.[31m[36mget[31m(loginEndpoint[33m,[31m {[0m
+[0m [90m    |[31m                                                 [31m[1m^[22m[31m[0m
+[0m [90m 17 |[31m           headers[33m:[31m {[0m
+[0m [90m 18 |[31m             [33mAuthorization[31m[33m:[31m [32m`Bearer ${localStorage.getItem('accessToken')}`[31m[33m,[31m[0m
+[0m [90m 19 |[31m           }[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m:16:48
+[33m  14 |    //   const fetchTodos = async () => {
+  15 |        try {
+  16 |          const response: AxiosResponse<Todo[]> = await axios.get(loginEndpoint, {
+     |                                                  ^
+  17 |            headers: {
+  18 |              Authorization: `Bearer ${localStorage.getItem('accessToken')}`,[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.checkReservedWord (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12072:12)
+      at TypeScriptParserMixin.checkReservedWord (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9206:13)
+      at TypeScriptParserMixin.parseIdentifierName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12051:12)
+      at TypeScriptParserMixin.parseIdentifier (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12026:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11231:27)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13259:91)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseTryStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13073:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12627:21)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11935:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:47:59 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:48:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:48:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:48:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:49:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:49:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:53:18 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:54:31 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/common/AppSpinner/AppSpinner.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:55:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/common/AppSpinner/AppSpinner.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:55:05 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/common/AppSpinner/AppSpinner.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:56:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/common/AppSpinner/AppSpinner.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:56:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/common/AppSpinner/AppSpinner.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:57:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:58:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:58:25 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:58:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m9:58:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:00:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m

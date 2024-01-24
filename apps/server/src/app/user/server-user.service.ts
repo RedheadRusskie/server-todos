@@ -37,8 +37,8 @@ export class UserService {
   }
 
   async getAll() {
-    return (await this.userRepository.findAll({ populate: ['todos'] })).map(
-      (user) => this.buildUserRO(user)
+    return (await this.userRepository.findAll()).map((user) =>
+      this.buildUserRO(user)
     );
   }
 
@@ -48,7 +48,7 @@ export class UserService {
     includeCredentials: boolean
   ) {
     return this.userRepository
-      .findOneOrFail(criteria, { populate: ['todos'] })
+      .findOneOrFail(criteria)
       .then((user) => (!includeCredentials ? this.buildUserRO(user) : user))
       .catch(() => {
         throw new NotFoundException(notFoundMessage);
@@ -59,11 +59,19 @@ export class UserService {
     return this.findRecord({ id }, 'User not found with provided ID.', false);
   }
 
-  async findRecordByUsername(username: string) {
+  async findRecordByUsernameWithPassword(username: string) {
     return this.findRecord(
       { username },
       'User not found with provided username.',
       true
+    );
+  }
+
+  async findRecordByUsername(username: string) {
+    return this.findRecord(
+      { username },
+      'User not found with provided username.',
+      false
     );
   }
 
@@ -85,6 +93,7 @@ export class UserService {
   buildUserRO(user: UserEntity) {
     const userRO = { ...user };
     delete userRO['password'];
+    delete userRO['todos'];
 
     return userRO;
   }

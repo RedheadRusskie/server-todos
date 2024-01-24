@@ -6,7 +6,7 @@ import {
 import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { ToDoEntity } from './entities';
-import { AddTodoDto, UpdateToDoDto } from './dto';
+import { AddTodoDto, ToDoDto, UpdateToDoDto } from './dto';
 import { CurrentUser, UserEntity } from '../user';
 import { UserDto } from '../user/dto';
 
@@ -19,7 +19,7 @@ export class ToDosService {
   ) {}
 
   async add(@CurrentUser() user: UserDto, todo: AddTodoDto) {
-    this.checkPermissions(user, todo.user.id);
+    this.checkPermissions(user, todo.user);
 
     const todoToAdd = this.toDoRepository.create({
       user: this.em.getReference(UserEntity, user.id),
@@ -44,16 +44,20 @@ export class ToDosService {
     updatedRecord: UpdateToDoDto
   ) {
     const record = await this.findRecordById(id);
-    updatedRecord.last_updated = new Date();
     this.checkPermissions(user, record.user.id);
+    updatedRecord.last_updated = new Date();
 
     await this.em.nativeUpdate(ToDoEntity, { id }, updatedRecord);
 
     return updatedRecord;
   }
 
-  userCanPerformAction(currentUser: UserDto, userId: string) {
-    return currentUser.role.id === 0 || currentUser.id === userId;
+  userCanPerformAction(currentUser: UserDto, targetUserId: string) {
+    if (currentUser.role.id === 0) return true;
+
+    if (currentUser.id === targetUserId) return true;
+
+    return false;
   }
 
   private checkPermissions(currentUser: UserDto, targetUserId: string) {
@@ -65,6 +69,20 @@ export class ToDosService {
 
   async getAll() {
     return await this.toDoRepository.findAll();
+  }
+
+  async findRecordsByUserId(userId: string) {
+    const todos = await this.toDoRepository.find({
+      user: {
+        id: userId,
+      },
+    });
+
+    if (!todos || todos.length === 0) {
+      throw new NotFoundException(`No todos found for user with ID: ${userId}`);
+    }
+
+    return todos;
   }
 
   async findRecordById(id: string) {

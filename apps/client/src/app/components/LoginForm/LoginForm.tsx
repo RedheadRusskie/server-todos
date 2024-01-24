@@ -15,11 +15,17 @@ import { useMutation } from 'react-query';
 import axios, { AxiosError } from 'axios';
 import { useForm } from 'react-hook-form';
 import { FormErrorBox } from '../common/FormErrorBox/FormErrorBox';
-import { ErrorResponse, LoginFormInput } from '../../interfaces/interfaces';
+import {
+  AuthRO,
+  ErrorResponse,
+  LoginFormInput,
+} from '../../interfaces/interfaces';
 import { CustomToast } from '../common/CustomToast/CustomToast';
+import { useNavigate } from 'react-router-dom';
 
 export const LoginForm: React.FC = () => {
-  const [formError, setFormError] = useState<string | undefined>();
+  const [formError, setFormError] = useState<string | null | undefined>();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -27,32 +33,43 @@ export const LoginForm: React.FC = () => {
   } = useForm<LoginFormInput>();
   const toast = useToast();
   const linkColor = useColorModeValue('#524166', '#ffffff');
-  const loginEndpoint = 'http://localhost:3000/api/auth/login';
+  const loginEndpoint = `${import.meta.env.VITE_SERVER_BASE_URL}/auth/login`;
 
-  const sendLoginRequest = (data: LoginFormInput): Promise<string> => {
-    return axios.post(loginEndpoint, data).then((res) => res.data.accessToken);
-  };
+  const sendLoginRequest = (
+    data: LoginFormInput
+  ): Promise<{ accessToken: string; userId: string }> =>
+    axios.post(loginEndpoint, data).then((res) => {
+      return {
+        accessToken: res.data.accessToken,
+        userId: res.data.userId,
+      } as const;
+    });
 
-  const { mutate, isLoading } = useMutation(sendLoginRequest, {
+  const { mutateAsync, isLoading } = useMutation(sendLoginRequest, {
     onError: (error: AxiosError<ErrorResponse>) => {
       setFormError(error.response?.data?.message);
     },
-    onSuccess: (token: string) => {
-      localStorage.setItem('accessToken', token);
-      setFormError(undefined);
+    onSuccess: (data: AuthRO) => {
+      const { accessToken, userId } = data;
+
+      localStorage.setItem('accessToken', accessToken);
+      localStorage.setItem('userID', userId);
+
+      setFormError(null);
+
       toast({
         position: 'top',
-        duration: 1500,
+        duration: 2000,
         render: () => (
           <CustomToast type="success" message="Successfully logged in." />
         ),
       });
+
+      navigate('/todos');
     },
   });
 
-  const onSubmit = (data: LoginFormInput) => {
-    mutate(data);
-  };
+  const onSubmit = (data: LoginFormInput) => mutateAsync(data);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ width: '100%' }}>

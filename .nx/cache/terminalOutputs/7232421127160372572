@@ -1,0 +1,2008 @@
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:48:53 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:49:16 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:49:23 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:49:46 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:50:15 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:50:16 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:50:44 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:51:24 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:51:45 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:52:31 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:12 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:12 AM[22m [33m[1m[vite][22m[39m [33mwarning: [33mThe "??" operator here will always return the left operand[33m
+32 |    todos.sort((a, b) => a.last_updated.getTime() - b.last_updated.getTime());
+33 |  
+34 |    const test = status === 'success' ?? sortTodosByUpdateDate(data);
+   |                                      ^
+35 |  
+36 |    return <></>;
+[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:21 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:21 AM[22m [33m[1m[vite][22m[39m [33mwarning: [33mThe "??" operator here will always return the left operand[33m
+32 |    todos.sort((a, b) => a.last_updated.getTime() - b.last_updated.getTime());
+33 |  
+34 |    const test = status === 'success' ?? sortTodosByUpdateDate(data);
+   |                                      ^
+35 |  
+36 |    console.log('test', test);
+[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:21 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:21 AM[22m [33m[1m[vite][22m[39m [33mwarning: [33mThe "??" operator here will always return the left operand[33m
+32 |    todos.sort((a, b) => a.last_updated.getTime() - b.last_updated.getTime());
+33 |  
+34 |    const test = status === 'success' ?? sortTodosByUpdateDate(data);
+   |                                      ^
+35 |  
+36 |    console.log('test', test);
+[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:22 AM[22m [33m[1m[vite][22m[39m [33mwarning: [33mThe "??" operator here will always return the left operand[33m
+32 |    todos.sort((a, b) => a.last_updated.getTime() - b.last_updated.getTime());
+33 |  
+34 |    const test = status === 'success' ?? sortTodosByUpdateDate(data);
+   |                                      ^
+35 |  
+36 |    console.log('test', test);
+[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:55 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:55:52 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:55:53 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:56:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:56:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:56:22 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:56:38 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:57:10 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:29 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx: Identifier 'data' has already been declared. (31:8)
+
+[0m [90m 29 |[31m   })[33m;[31m[0m
+[0m [90m 30 |[31m[0m
+[0m[31m[1m>[22m[31m[90m 31 |[31m   [36mconst[31m data [33m=[31m status [33m===[31m [32m'success'[31m [33m?[31m sortTodosByUpdateDate(data) [33m:[31m [32m'failed'[31m[33m;[31m[0m
+[0m [90m    |[31m         [31m[1m^[22m[31m[0m
+[0m [90m 32 |[31m[0m
+[0m [90m 33 |[31m   [90m//   console.log('test', status);[31m[0m
+[0m [90m 34 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/pages/TodosPage/TodosPage.tsx[39m:31:8
+[33m  29 |    });
+  30 |  
+  31 |    const data = status === 'success' ? sortTodosByUpdateDate(data) : 'failed';
+     |          ^
+  32 |  
+  33 |    //   console.log('test', status);[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:1496:19)
+      at TypeScriptScopeHandler.declareName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:1467:12)
+      at TypeScriptScopeHandler.declareName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:7052:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:7484:16)
+      at TypeScriptParserMixin.checkIdentifier (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:7480:12)
+      at TypeScriptParserMixin.checkLVal (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:7419:12)
+      at TypeScriptParserMixin.parseVarId (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13280:10)
+      at TypeScriptParserMixin.parseVarId (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9609:11)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13258:12)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13189:61)
+      at TypeScriptParserMixin.parseBlockBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13182:10)
+      at TypeScriptParserMixin.parseBlock (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13170:10)
+      at TypeScriptParserMixin.parseFunctionBody (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11935:24)
+      at TypeScriptParserMixin.parseArrowExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11910:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11511:12)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseVar (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13259:91)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13100:10)
+      at TypeScriptParserMixin.parseVarStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9306:31)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12683:23)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+      at TypeScriptParserMixin.parseStatementListItem (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12568:17)
+      at TypeScriptParserMixin.parseExportDeclaration (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13835:17)
+      at TypeScriptParserMixin.parseExportDeclaration (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9487:85)
+      at TypeScriptParserMixin.maybeParseExportDeclaration (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13790:31)
+      at TypeScriptParserMixin.parseExport (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13713:29)
+      at TypeScriptParserMixin.parseExport (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9283:20)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12715:27)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:39 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:39 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:49 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:51 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:51 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+[2m12:59:29 AM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:3:58: ERROR: Syntax error "\x0A"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:29 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:3:58: ERROR: Syntax error "\x0A"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:3:58
+[33m  
+  [33mSyntax error "\x0A"[33m
+  1  |  import { Todo } from '../interfaces/interfaces';
+  2  |  
+  3  |  export const sortTodosByUpdateDate = (todos: Todo[]) =>{ \
+     |                                                            ^
+  4  |      
+  5  |    return todos.sort((a, b) => a.last_updated.getTime() - b.last_updated.getTime());
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:31 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:31 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:55 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+[2m12:59:55 AM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:15: ERROR: Invalid assignment target
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:55 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:15: ERROR: Invalid assignment target[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:4:15
+[33m  
+  [33mInvalid assignment target[33m
+  2  |  
+  3  |  export const sortTodosByUpdateDate = (todos: Todo[]) => {
+  4  |    console.log(('test date' = todos[0].last_updated.getTime()));
+     |                 ^
+  5  |  
+  6  |    return todos.sort(
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:01 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+[2m1:00:01 AM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:27: ERROR: Expected ")" but found "todos"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:01 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:27: ERROR: Expected ")" but found "todos"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:4:27
+[33m  
+  [33mExpected ")" but found "todos"[33m
+  2  |  
+  3  |  export const sortTodosByUpdateDate = (todos: Todo[]) => {
+  4  |    console.log(('test date' todos[0].last_updated.getTime()));
+     |                             ^
+  5  |  
+  6  |    return todos.sort(
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:03 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+[2m1:00:07 AM[22m [31m[1m[vite][22m[39m Pre-transform error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:59: ERROR: Expected ";" but found ")"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:07 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts:4:59: ERROR: Expected ";" but found ")"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/utils/sortTodosByUpdateDate.ts[39m:4:59
+[33m  
+  [33mExpected ";" but found ")"[33m
+  2  |  
+  3  |  export const sortTodosByUpdateDate = (todos: Todo[]) => {
+  4  |    console.log('test date', todos[0].last_updated.getTime()));
+     |                                                             ^
+  5  |  
+  6  |    return todos.sort(
+  [39m
+      at failureErrorWithLog (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:1650:15)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:848:29
+      at responseCallbacks.<computed> (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:703:9)
+      at handleIncomingPacket (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:763:9)
+      at Socket.readFromStdout (/Users/ivankonnikov/Developer/doit/doit/node_modules/esbuild/lib/main.js:679:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:09 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:10 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:11 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:11 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:00:12 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:01:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:01:29 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:01:44 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:01:44 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:01:45 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:03 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:03 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:05 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x13)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x14)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x15)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x16)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x17)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:07 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x18)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:02:18 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x19)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:03:44 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x20)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:03:44 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x21)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:03:47 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x22)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m1:03:48 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m [33m(x23)[39m

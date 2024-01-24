@@ -2,7 +2,8 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
-import { LoginRegisterPage } from './pages/login/LoginRegisterPage';
+import { LoginRegisterPage } from './pages/LoginRegisterPage/LoginRegisterPage';
+import { TodosPage } from './pages/TodosPage/TodosPage';
 
 const queryClient = new QueryClient();
 
@@ -45,11 +46,19 @@ function App() {
             />
             <Route
               element={
-                <AppLayout>
+                <AppLayout>           
                   <LoginRegisterPage isFor="Register" />
                 </AppLayout>
               }
               path="/register"
+            />
+            <Route
+              element={
+                <AppLayout>
+                  <TodosPage />
+                </AppLayout>
+              }
+              path="/todos"
             />
           </Routes>
         </BrowserRouter>

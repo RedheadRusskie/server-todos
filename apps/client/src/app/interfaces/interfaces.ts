@@ -5,7 +5,7 @@ export interface Todo {
   body: string;
   complete: boolean;
   added: Date;
-  last_updated: Date;
+  last_updated: Date; 
 }
 
 export interface UserData {
@@ -39,4 +39,9 @@ export interface RegisterFormInput {
 export interface ErrorResponse {
   message: string;
   statusCode: number;
+}
+
+export interface AuthRO {
+  accessToken: string;
+  userId: string;
 }
