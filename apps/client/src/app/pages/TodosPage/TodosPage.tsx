@@ -4,6 +4,8 @@ import { useToast } from '@chakra-ui/react';
 import { CustomToast } from '../../components/common/CustomToast/CustomToast';
 import { AppSpinner } from '../../components/common/AppSpinner/AppSpinner';
 import { sortTodosByUpdateDate } from '../../utils';
+import { TodoCard } from '../../components/TodoCard/ToDoCard';
+import { TodoCardsContainer } from '../../components/TodoCardContainer/TodoCardSContainer';
 
 export const TodosPage: React.FC = () => {
   const todosEndpoint = `${
@@ -25,6 +27,8 @@ export const TodosPage: React.FC = () => {
     queryFn: sendLoginRequest,
   });
 
+  const sortedTodos = data ? sortTodosByUpdateDate(data) : null;
+
   if (isLoading) return <AppSpinner />;
 
   if (error)
@@ -36,7 +40,11 @@ export const TodosPage: React.FC = () => {
       ),
     });
 
-  const sortedTodos = data ? sortTodosByUpdateDate(data) : null;
-
-  return <></>;
+  return (
+    <TodoCardsContainer>
+      {sortedTodos?.map((todo) => (
+        <TodoCard key={todo.id} todo={todo} />
+      ))}
+    </TodoCardsContainer>
+  );
 };

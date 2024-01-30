@@ -1,9 +1,10 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
 import { LoginRegisterPage } from './pages/LoginRegisterPage/LoginRegisterPage';
 import { TodosPage } from './pages/TodosPage/TodosPage';
+import { useIsAuthenticated } from './hooks/useIsAuthenticated';
 
 const queryClient = new QueryClient();
 
@@ -30,37 +31,47 @@ const theme = extendTheme({
 });
 
 function App() {
+  const isUserAuthenticated = useIsAuthenticated();
+
   return (
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
         <BrowserRouter>
-          <Routes>
-            <Route
-              index
-              element={
-                <AppLayout>
-                  <LoginRegisterPage isFor="Login" />
-                </AppLayout>
-              }
-              path="/login"
-            />
-            <Route
-              element={
-                <AppLayout>           
-                  <LoginRegisterPage isFor="Register" />
-                </AppLayout>
-              }
-              path="/register"
-            />
-            <Route
-              element={
-                <AppLayout>
-                  <TodosPage />
-                </AppLayout>
-              }
-              path="/todos"
-            />
-          </Routes>
+          <AppLayout>
+            <Routes>
+              <Route
+                index
+                element={
+                  !isUserAuthenticated ? (
+                    <LoginRegisterPage isFor="Login" />
+                  ) : (
+                    <Navigate to="/todos" replace />
+                  )
+                }
+                path="/login"
+              />
+              <Route
+                element={
+                  !isUserAuthenticated ? (
+                    <LoginRegisterPage isFor="Register" />
+                  ) : (
+                    <Navigate to="/todos" replace />
+                  )
+                }
+                path="/register"
+              />
+              <Route
+                element={
+                  isUserAuthenticated ? (
+                    <TodosPage />
+                  ) : (
+                    <Navigate to="/login" replace />
+                  )
+                }
+                path="/todos"
+              />
+            </Routes>
+          </AppLayout>
         </BrowserRouter>
       </ChakraProvider>
     </QueryClientProvider>

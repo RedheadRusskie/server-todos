@@ -1,0 +1,21 @@
+.scrollContainer {
+  margin-top: 3em;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(180deg, #0000, #000 10% 80%, #0000);
+  max-height: 600px;
+  overflow-y: scroll;
+
+  &:before {
+    content: '';
+    height: 3em;
+    display: block;
+    position: relative;
+  }
+
+  &:after {
+    content: '';
+    height: 5em;
+    display: block;
+    position: relative;
+  }
+}

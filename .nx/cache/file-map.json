@@ -20,6 +20,7 @@
     "bcrypt": "^5.1.1",
     "framer-motion": "^10.16.16",
     "i": "^0.3.7",
+    "jwt-decode": "^4.0.0",
     "npm": "^10.2.5",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
@@ -76,168 +77,13 @@
     "sass": "^1.55.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
-    "typescript": "^5.3.3",
+    "typescript": "^4.9.5",
     "vite": "^5.0.0",
     "vitest": "~0.34.6"
   },
   "pathMappings": {},
   "nxJsonPlugins": [],
   "projectFileMap": {
-    "client": [
-      {
-        "file": "apps/client/.eslintrc.json",
-        "hash": "11012487992710232822"
-      },
-      {
-        "file": "apps/client/index.html",
-        "hash": "17743788895777739047"
-      },
-      {
-        "file": "apps/client/project.json",
-        "hash": "14236385799174584826"
-      },
-      {
-        "file": "apps/client/public/favicon.ico",
-        "hash": "9303420814833116677"
-      },
-      {
-        "file": "apps/client/src/app/app.module.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "apps/client/src/app/app.tsx",
-        "hash": "912095008207990913",
-        "deps": [
-          "npm:@chakra-ui/react",
-          "npm:react-router-dom",
-          "npm:react-query"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/assets/login.svg",
-        "hash": "13968381823620842061"
-      },
-      {
-        "file": "apps/client/src/app/components/LoginForm/LoginForm.tsx",
-        "hash": "13992395538911382365",
-        "deps": [
-          "npm:react",
-          "npm:@chakra-ui/react",
-          "npm:react-query",
-          "npm:axios",
-          "npm:react-hook-form",
-          "npm:react-router-dom"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/components/RegisterForm/RegisterForm.tsx",
-        "hash": "4396780408493271730",
-        "deps": [
-          "npm:react",
-          "npm:react-router-dom",
-          "npm:react-query",
-          "npm:axios",
-          "npm:react-hook-form",
-          "npm:@chakra-ui/react"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/components/common/AppLayout/AppLayout.module.scss",
-        "hash": "884932864705627062"
-      },
-      {
-        "file": "apps/client/src/app/components/common/AppLayout/AppLayout.tsx",
-        "hash": "17308614631439896110",
-        "deps": [
-          "npm:react",
-          "npm:@chakra-ui/react",
-          "npm:react-router-dom"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/components/common/CustomInput/CustomInput.tsx",
-        "hash": "8648848160088799180",
-        "deps": [
-          "npm:@chakra-ui/react"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/components/common/CustomToast/CustomToast.tsx",
-        "hash": "7949734093216413499",
-        "deps": [
-          "npm:@chakra-ui/react",
-          "npm:@chakra-ui/icons"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/components/common/Footer/Footer.tsx",
-        "hash": "14838617510226900156",
-        "deps": [
-          "npm:@chakra-ui/react"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/components/common/FormErrorBox/FormErrorBox.tsx",
-        "hash": "11494617482193876920",
-        "deps": [
-          "npm:@chakra-ui/react"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/interfaces/interfaces.ts",
-        "hash": "8425766653164760631"
-      },
-      {
-        "file": "apps/client/src/app/pages/LoginRegisterPage/LoginRegisterPage.tsx",
-        "hash": "10824395178296517527",
-        "deps": [
-          "npm:@chakra-ui/react",
-          "npm:@fontsource-variable/montserrat",
-          "npm:framer-motion"
-        ]
-      },
-      {
-        "file": "apps/client/src/app/pages/TodosPage/TodosPage.tsx",
-        "hash": "5934643742367279333",
-        "deps": [
-          "npm:react-query",
-          "npm:axios"
-        ]
-      },
-      {
-        "file": "apps/client/src/main.tsx",
-        "hash": "6013565506688027592",
-        "deps": [
-          "npm:react",
-          "npm:react-dom"
-        ]
-      },
-      {
-        "file": "apps/client/src/styles.scss",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "apps/client/tsconfig.app.json",
-        "hash": "7232119452847825095"
-      },
-      {
-        "file": "apps/client/tsconfig.json",
-        "hash": "11166545116916107487"
-      },
-      {
-        "file": "apps/client/tsconfig.spec.json",
-        "hash": "9472099605191632308"
-      },
-      {
-        "file": "apps/client/vite.config.ts",
-        "hash": "5779821138818874340",
-        "deps": [
-          "npm:vite",
-          "npm:@vitejs/plugin-react",
-          "npm:@nx/vite"
-        ]
-      }
-    ],
     "server": [
       {
         "file": "apps/server/.eslintrc.json",
@@ -572,6 +418,221 @@
         "deps": [
           "npm:@nx/webpack"
         ]
+      }
+    ],
+    "client": [
+      {
+        "file": "apps/client/.eslintrc.json",
+        "hash": "11012487992710232822"
+      },
+      {
+        "file": "apps/client/index.html",
+        "hash": "17743788895777739047"
+      },
+      {
+        "file": "apps/client/project.json",
+        "hash": "14236385799174584826"
+      },
+      {
+        "file": "apps/client/public/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": "apps/client/src/app/app.module.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/client/src/app/app.tsx",
+        "hash": "8131434192297226731",
+        "deps": [
+          "npm:react-router-dom",
+          "npm:react-query",
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/assets/login.svg",
+        "hash": "13968381823620842061"
+      },
+      {
+        "file": "apps/client/src/app/components/LoginForm/LoginForm.tsx",
+        "hash": "7321787693588522124",
+        "deps": [
+          "npm:react",
+          "npm:@chakra-ui/react",
+          "npm:react-query",
+          "npm:axios",
+          "npm:react-hook-form",
+          "npm:react-router-dom"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/RegisterForm/RegisterForm.tsx",
+        "hash": "4396780408493271730",
+        "deps": [
+          "npm:react",
+          "npm:react-router-dom",
+          "npm:react-query",
+          "npm:axios",
+          "npm:react-hook-form",
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/common/AppLayout/AppLayout.module.scss",
+        "hash": "884932864705627062"
+      },
+      {
+        "file": "apps/client/src/app/components/common/AppLayout/AppLayout.tsx",
+        "hash": "17308614631439896110",
+        "deps": [
+          "npm:react",
+          "npm:@chakra-ui/react",
+          "npm:react-router-dom"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/common/AppSpinner/AppSpinner.tsx",
+        "hash": "14944822589072458459",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/common/CustomInput/CustomInput.tsx",
+        "hash": "8648848160088799180",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/common/CustomToast/CustomToast.tsx",
+        "hash": "7949734093216413499",
+        "deps": [
+          "npm:@chakra-ui/react",
+          "npm:@chakra-ui/icons"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/common/Footer/Footer.tsx",
+        "hash": "14838617510226900156",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/common/FormErrorBox/FormErrorBox.tsx",
+        "hash": "11494617482193876920",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/hooks/useIsAuthenticated.ts",
+        "hash": "5285817721423197258",
+        "deps": [
+          "npm:jwt-decode"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/interfaces/interfaces.ts",
+        "hash": "14664790927924582968"
+      },
+      {
+        "file": "apps/client/src/app/pages/LoginRegisterPage/LoginRegisterPage.tsx",
+        "hash": "10824395178296517527",
+        "deps": [
+          "npm:@chakra-ui/react",
+          "npm:@fontsource-variable/montserrat",
+          "npm:framer-motion"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/pages/TodosPage/TodosPage.tsx",
+        "hash": "10023462695818226315",
+        "deps": [
+          "npm:react-query",
+          "npm:axios",
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/utils/index.ts",
+        "hash": "1441538929024530740"
+      },
+      {
+        "file": "apps/client/src/app/utils/sortTodosByUpdateDate.ts",
+        "hash": "4715095754869427492"
+      },
+      {
+        "file": "apps/client/src/main.tsx",
+        "hash": "6013565506688027592",
+        "deps": [
+          "npm:react",
+          "npm:react-dom"
+        ]
+      },
+      {
+        "file": "apps/client/src/styles.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/client/tsconfig.app.json",
+        "hash": "7232119452847825095"
+      },
+      {
+        "file": "apps/client/tsconfig.json",
+        "hash": "11166545116916107487"
+      },
+      {
+        "file": "apps/client/tsconfig.spec.json",
+        "hash": "9472099605191632308"
+      },
+      {
+        "file": "apps/client/vite.config.ts",
+        "hash": "5779821138818874340",
+        "deps": [
+          "npm:vite",
+          "npm:@vitejs/plugin-react",
+          "npm:@nx/vite"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/ToDoCard/ToDoCard.tsx",
+        "hash": "13640600921894087950",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/TodoCard/ToDoCard.tsx",
+        "hash": "13640600921894087950",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/TodoCard/TodoCard.tsx",
+        "hash": "3832989356059000832",
+        "deps": [
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/TodoCardContainer/TodoCardSContainer.tsx",
+        "hash": "12921968850385987753",
+        "deps": [
+          "npm:react",
+          "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/components/TodoCardContainer/TodoCardsContainer.module.scss",
+        "hash": "17662543337730269258"
+      },
+      {
+        "file": "apps/client/src/app/components/TodoCard/TodoCard.module.scss",
+        "hash": "2903563080693911290"
       }
     ]
   }
