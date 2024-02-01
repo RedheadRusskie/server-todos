@@ -68,6 +68,7 @@
     "@swc/helpers": "~0.5.2",
     "axios": "^1.0.0",
     "bcrypt": "^5.1.1",
+    "dayjs": "^1.11.10",
     "framer-motion": "^10.16.16",
     "i": "^0.3.7",
     "jwt-decode": "^4.0.0",

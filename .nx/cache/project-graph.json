@@ -8559,6 +8559,15 @@
         "hash": "sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg=="
       }
     },
+    "npm:dayjs": {
+      "type": "npm",
+      "name": "npm:dayjs",
+      "data": {
+        "version": "1.11.10",
+        "packageName": "dayjs",
+        "hash": "sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ=="
+      }
+    },
     "npm:decimal.js": {
       "type": "npm",
       "name": "npm:decimal.js",
@@ -18778,6 +18787,11 @@
       {
         "source": "client",
         "target": "npm:react-hook-form",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:dayjs",
         "type": "static"
       },
       {

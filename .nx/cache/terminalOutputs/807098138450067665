@@ -5031,3 +5031,1312 @@
 
 
 [1;1H[0J[2m12:16:46 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:21:19 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:23:20 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:25:57 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:26:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:26:42 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:26:42 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:27:13 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:27:36 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:31:09 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:31:12 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:31:16 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:31:24 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:31:28 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:31:45 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:32:00 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:32:06 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:32:39 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:32:46 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:32:54 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:33:00 AM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:08:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/pages/TodosPage/TodosPage.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:09:35 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:09:39 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:09:42 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:09:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:11:03 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:11:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:11:21 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:12:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:12:24 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:12:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:12:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:13:08 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:13:36 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x13)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:14:00 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x14)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:15:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x15)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:15:58 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx: Unterminated string constant. (30:21)
+
+[0m [90m 28 |[31m         {todo[33m.[31mname}[0m
+[0m [90m 29 |[31m       [33m<[31m[33m/[31m[33mText[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 30 |[31m       [33m<[31m[33mDivider[31m color[33m=[31m[32m"#A0AEC0/>[31m[0m
+[0m [90m    |[31m                      [31m[1m^[22m[31m[0m
+[0m [90m 31 |[31m     [33m<[31m[33m/[31m[33mCard[31m[33m>[31m[0m
+[0m [90m 32 |[31m   )[33m;[31m[0m
+[0m [90m 33 |[31m }[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx[39m:30:21
+[33m  28 |          {todo.name}
+  29 |        </Text>
+  30 |        <Divider color="#A0AEC0/>
+     |                       ^
+  31 |      </Card>
+  32 |    );[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.jsxReadString (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6657:20)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6956:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9847:11)
+      at TypeScriptParserMixin.nextToken (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2347:10)
+      at TypeScriptParserMixin.next (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2258:10)
+      at TypeScriptParserMixin.eat (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2262:12)
+      at TypeScriptParserMixin.jsxParseAttribute (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6813:23)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6827:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9903:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6822:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6846:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6858:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6915:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6927:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:39
+      at TypeScriptParserMixin.tryParse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3592:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:18)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11499:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.parseReturnStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13003:28)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12621:21)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+[2m11:16:07 PM[22m [31m[1m[vite][22m[39m Pre-transform error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx: Unterminated string constant. (30:21)
+
+[0m [90m 28 |[39m         {todo[33m.[39mname}[0m
+[0m [90m 29 |[39m       [33m<[39m[33m/[39m[33mText[39m[33m>[39m[0m
+[0m[31m[1m>[22m[39m[90m 30 |[39m       [33m<[39m[33mDivider[39m color[33m=[39m[32m"#A0AEC0/>[39m[0m
+[0m [90m    |[39m                      [31m[1m^[22m[39m[0m
+[0m [90m 31 |[39m     [33m<[39m[33m/[39m[33mCard[39m[33m>[39m[0m
+[0m [90m 32 |[39m   )[33m;[39m[0m
+[0m [90m 33 |[39m }[33m;[39m[0m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:07 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx: Unterminated string constant. (30:21)
+
+[0m [90m 28 |[31m         {todo[33m.[31mname}[0m
+[0m [90m 29 |[31m       [33m<[31m[33m/[31m[33mText[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 30 |[31m       [33m<[31m[33mDivider[31m color[33m=[31m[32m"#A0AEC0/>[31m[0m
+[0m [90m    |[31m                      [31m[1m^[22m[31m[0m
+[0m [90m 31 |[31m     [33m<[31m[33m/[31m[33mCard[31m[33m>[31m[0m
+[0m [90m 32 |[31m   )[33m;[31m[0m
+[0m [90m 33 |[31m }[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx[39m:30:21
+[33m  28 |          {todo.name}
+  29 |        </Text>
+  30 |        <Divider color="#A0AEC0/>
+     |                       ^
+  31 |      </Card>
+  32 |    );[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.jsxReadString (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6657:20)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6956:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9847:11)
+      at TypeScriptParserMixin.nextToken (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2347:10)
+      at TypeScriptParserMixin.next (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2258:10)
+      at TypeScriptParserMixin.eat (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2262:12)
+      at TypeScriptParserMixin.jsxParseAttribute (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6813:23)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6827:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9903:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6822:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6846:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6858:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6915:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6927:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:39
+      at TypeScriptParserMixin.tryParse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3592:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:18)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11499:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.parseReturnStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13003:28)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12621:21)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:52 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:52 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx: Unterminated string constant. (31:14)
+
+[0m [90m 29 |[31m       [33m<[31m[33m/[31m[33mText[31m[33m>[31m[0m
+[0m [90m 30 |[31m       [33m<[31m[33mDivider[31m[0m
+[0m[31m[1m>[22m[31m[90m 31 |[31m         color[33m=[31m[32m"#718096[31m[0m
+[0m [90m    |[31m               [31m[1m^[22m[31m[0m
+[0m [90m 32 |[31m[0m
+[0m [90m 33 |[31m       [33m/[31m[33m>[31m[0m
+[0m [90m 34 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx[39m:31:14
+[33m  29 |        </Text>
+  30 |        <Divider
+  31 |          color="#718096
+     |                ^
+  32 |  
+  33 |        />[39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.jsxReadString (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6657:20)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6956:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9847:11)
+      at TypeScriptParserMixin.nextToken (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2347:10)
+      at TypeScriptParserMixin.next (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2258:10)
+      at TypeScriptParserMixin.eat (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2262:12)
+      at TypeScriptParserMixin.jsxParseAttribute (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6813:23)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6827:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9903:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6822:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6846:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6858:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6915:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6927:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:39
+      at TypeScriptParserMixin.tryParse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3592:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:18)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11499:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.parseReturnStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13003:28)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12621:21)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:53 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:53 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: /Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx: Unterminated string constant. (31:14)
+
+[0m [90m 29 |[31m       [33m<[31m[33m/[31m[33mText[31m[33m>[31m[0m
+[0m [90m 30 |[31m       [33m<[31m[33mDivider[31m[0m
+[0m[31m[1m>[22m[31m[90m 31 |[31m         color[33m=[31m[32m"#718096[31m[0m
+[0m [90m    |[31m               [31m[1m^[22m[31m[0m
+[0m [90m 32 |[31m       [33m/[31m[33m>[31m[0m
+[0m [90m 33 |[31m[0m
+[0m [90m 34 |[31m     [33m<[31m[33m/[31m[33mCard[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.tsx[39m:31:14
+[33m  29 |        </Text>
+  30 |        <Divider
+  31 |          color="#718096
+     |                ^
+  32 |        />
+  33 |  [39m
+      at constructor (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:356:19)
+      at TypeScriptParserMixin.raise (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3223:19)
+      at TypeScriptParserMixin.jsxReadString (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6657:20)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6956:14)
+      at TypeScriptParserMixin.getTokenFromCode (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9847:11)
+      at TypeScriptParserMixin.nextToken (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2347:10)
+      at TypeScriptParserMixin.next (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2258:10)
+      at TypeScriptParserMixin.eat (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:2262:12)
+      at TypeScriptParserMixin.jsxParseAttribute (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6813:23)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6827:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9903:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6822:17)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6846:33)
+      at TypeScriptParserMixin.jsxParseElementAt (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6858:32)
+      at TypeScriptParserMixin.jsxParseElement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6915:17)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6927:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:39
+      at TypeScriptParserMixin.tryParse (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:3592:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9632:18)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12284:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11499:28)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:11137:23)
+      at TypeScriptParserMixin.parseExprAtom (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10857:23)
+      at TypeScriptParserMixin.parseUpdate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10840:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10816:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9696:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10654:61)
+      at TypeScriptParserMixin.parseExprOps (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10659:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10636:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10597:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9643:20)
+      at TypeScriptParserMixin.parseExpressionBase (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10551:23)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:39
+      at TypeScriptParserMixin.allowInAnd (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12279:16)
+      at TypeScriptParserMixin.parseExpression (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:10547:17)
+      at TypeScriptParserMixin.parseReturnStatement (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:13003:28)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12621:21)
+      at TypeScriptParserMixin.parseStatementContent (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:9340:18)
+      at TypeScriptParserMixin.parseStatementLike (/Users/ivankonnikov/Developer/doit/doit/node_modules/@babel/parser/lib/index.js:12588:17)
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:16:54 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:17:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:10 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:11 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:34 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:18:40 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:21:12 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:21:20 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x13)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:22:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x14)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:23:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x15)[39m
+[2m11:23:47 PM[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mdayjs/plugin/utc, dayjs/plugin/relativeTime[32m[39m
+[2m11:23:47 PM[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:25:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+[2m11:25:47 PM[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mdayjs[32m[39m
+[2m11:25:47 PM[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:25:51 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:25:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:26:02 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:26:56 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:27:09 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:27:25 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:27:26 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:27:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:28:16 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:28:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:31:38 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x11)[39m
+[2m11:31:38 PM[22m [31m[1m[vite][22m[39m Pre-transform error: [sass] Top-level selectors may not contain the parent selector "&".
+  ╷
+8 │ &:hover {
+  │ ^
+  ╵
+  apps/client/src/app/components/TodoCard/TodoCard.module.scss 8:1  root stylesheet
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:31:38 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [sass] Top-level selectors may not contain the parent selector "&".
+  ╷
+8 │ &:hover {
+  │ ^
+  ╵
+  apps/client/src/app/components/TodoCard/TodoCard.module.scss 8:1  root stylesheet[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.module.scss[39m:8:1
+[33m  Error: Top-level selectors may not contain the parent selector "&".
+    ╷
+  8 │ &:hover {
+    │ ^
+    ╵
+    apps/client/src/app/components/TodoCard/TodoCard.module.scss 8:1  root stylesheet[39m
+      at Object.wrapException (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:1252:43)
+      at SelectorList0.resolveParentSelectors$2$implicitParent (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:98419:17)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:79769:35
+      at _wrapJsFunctionForAsync_closure.$protected (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:3995:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32103:12)
+      at _awaitOnObject_closure.call$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32091:32)
+      at Object._rootRunUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4382:18)
+      at StaticClosure.<anonymous> (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:112142:16)
+      at _CustomZone.runUnary$2$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33527:39)
+      at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32590:51)
+      at Object._Future__propagateToListeners (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4175:93)
+      at _Future._completeWithValue$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32454:9)
+      at _AsyncAwaitCompleter.complete$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32078:14)
+      at Object._asyncReturn (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:3967:17)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:82296:24
+      at _wrapJsFunctionForAsync_closure.$protected (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:3995:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32103:12)
+      at _awaitOnObject_closure.call$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32091:32)
+      at Object._rootRunUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4382:18)
+      at StaticClosure.<anonymous> (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:112142:16)
+      at _CustomZone.runUnary$2$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33527:39)
+      at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32590:51)
+      at Object._Future__propagateToListeners (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4175:93)
+      at _Future._completeWithValue$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32454:9)
+      at _Future__asyncCompleteWithValue_closure.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32532:18)
+      at Object._rootRun (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4372:16)
+      at StaticClosure.<anonymous> (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:112139:16)
+      at _CustomZone.run$1$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33522:39)
+      at _CustomZone_bindCallback_closure.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33621:25)
+      at Object._microtaskLoop (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4233:24)
+      at StaticClosure._startMicrotaskLoop (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4239:11)
+      at _AsyncRun__scheduleImmediateJsOverride_internalCallback.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32004:21)
+      at invokeClosure (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:1462:26)
+      at Immediate._onImmediate (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:1483:18)
+      at process.processImmediate (node:internal/timers:478:21)
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:31:40 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [sass] Top-level selectors may not contain the parent selector "&".
+  ╷
+8 │ &:hover {
+  │ ^
+  ╵
+  apps/client/src/app/components/TodoCard/TodoCard.module.scss 8:1  root stylesheet[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/Users/ivankonnikov/Developer/doit/doit/apps/client/src/app/components/TodoCard/TodoCard.module.scss[39m:8:1
+[33m  Error: Top-level selectors may not contain the parent selector "&".
+    ╷
+  8 │ &:hover {
+    │ ^
+    ╵
+    apps/client/src/app/components/TodoCard/TodoCard.module.scss 8:1  root stylesheet[39m
+      at Object.wrapException (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:1252:43)
+      at SelectorList0.resolveParentSelectors$2$implicitParent (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:98419:17)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:79769:35
+      at _wrapJsFunctionForAsync_closure.$protected (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:3995:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32103:12)
+      at _awaitOnObject_closure.call$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32091:32)
+      at Object._rootRunUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4382:18)
+      at StaticClosure.<anonymous> (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:112142:16)
+      at _CustomZone.runUnary$2$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33527:39)
+      at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32590:51)
+      at Object._Future__propagateToListeners (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4175:93)
+      at _Future._completeWithValue$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32454:9)
+      at _AsyncAwaitCompleter.complete$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32078:14)
+      at Object._asyncReturn (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:3967:17)
+      at /Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:82296:24
+      at _wrapJsFunctionForAsync_closure.$protected (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:3995:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32103:12)
+      at _awaitOnObject_closure.call$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32091:32)
+      at Object._rootRunUnary (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4382:18)
+      at StaticClosure.<anonymous> (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:112142:16)
+      at _CustomZone.runUnary$2$2 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33527:39)
+      at _Future__propagateToListeners_handleValueCallback.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32590:51)
+      at Object._Future__propagateToListeners (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4175:93)
+      at _Future._completeWithValue$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32454:9)
+      at _Future__asyncCompleteWithValue_closure.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32532:18)
+      at Object._rootRun (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4372:16)
+      at StaticClosure.<anonymous> (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:112139:16)
+      at _CustomZone.run$1$1 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33522:39)
+      at _CustomZone_bindCallback_closure.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:33621:25)
+      at Object._microtaskLoop (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4233:24)
+      at StaticClosure._startMicrotaskLoop (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:4239:11)
+      at _AsyncRun__scheduleImmediateJsOverride_internalCallback.call$0 (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:32004:21)
+      at invokeClosure (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:1462:26)
+      at Immediate._onImmediate (/Users/ivankonnikov/Developer/doit/doit/node_modules/sass/sass.dart.js:1483:18)
+      at process.processImmediate (node:internal/timers:478:21) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:31:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:31:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:32:06 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:32:12 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:36:45 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:36:46 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:37:27 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:37:29 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:38:31 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:39:13 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:41:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:41:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:42:31 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:42:41 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:42:43 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:42:44 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:42:48 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x13)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:42:50 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/app.tsx[22m [33m(x14)[39m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:43:26 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCard/TodoCard.tsx[22m
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:43:47 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/app/components/TodoCardContainer/TodoCardSContainer.tsx[22m

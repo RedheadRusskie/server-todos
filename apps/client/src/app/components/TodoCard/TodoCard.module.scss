@@ -1,4 +1,10 @@
 .todoCard {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.3) !important;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.todoCard:hover {
+  background: rgba(255, 255, 255, 0.5) !important;
 }
