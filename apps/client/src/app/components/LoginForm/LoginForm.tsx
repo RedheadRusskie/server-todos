@@ -22,6 +22,7 @@ import {
 } from '../../interfaces/interfaces';
 import { CustomToast } from '../common/CustomToast/CustomToast';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 
 export const LoginForm: React.FC = () => {
   const [formError, setFormError] = useState<string | null | undefined>();
@@ -34,6 +35,7 @@ export const LoginForm: React.FC = () => {
   const toast = useToast();
   const linkColor = useColorModeValue('#524166', '#ffffff');
   const loginEndpoint = `${import.meta.env.VITE_SERVER_BASE_URL}/auth/login`;
+  const { setToken } = useAuth();
 
   const sendLoginRequest = (
     data: LoginFormInput
@@ -52,8 +54,7 @@ export const LoginForm: React.FC = () => {
     onSuccess: (data: AuthRO) => {
       const { accessToken, userId } = data;
 
-      localStorage.setItem('accessToken', accessToken);
-      localStorage.setItem('userID', userId);
+      setToken(accessToken, userId);
 
       setFormError(null);
 

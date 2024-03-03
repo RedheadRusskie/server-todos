@@ -103,15 +103,22 @@
         "hash": "9303420814833116677"
       },
       {
+        "file": "apps/client/src/app/api/api.ts",
+        "hash": "7239053890213498894",
+        "deps": [
+          "npm:axios"
+        ]
+      },
+      {
         "file": "apps/client/src/app/app.module.scss",
         "hash": "3244421341483603138"
       },
       {
         "file": "apps/client/src/app/app.tsx",
-        "hash": "8131434192297226731",
+        "hash": "5019483168243413556",
         "deps": [
-          "npm:react-router-dom",
           "npm:react-query",
+          "npm:react-router-dom",
           "npm:@chakra-ui/react"
         ]
       },
@@ -121,7 +128,7 @@
       },
       {
         "file": "apps/client/src/app/components/LoginForm/LoginForm.tsx",
-        "hash": "7321787693588522124",
+        "hash": "5656609816567075642",
         "deps": [
           "npm:react",
           "npm:@chakra-ui/react",
@@ -149,7 +156,7 @@
       },
       {
         "file": "apps/client/src/app/components/TodoCard/TodoCard.tsx",
-        "hash": "8896841682184722099",
+        "hash": "11618123270144294090",
         "deps": [
           "npm:@chakra-ui/react",
           "npm:dayjs"
@@ -166,6 +173,19 @@
       {
         "file": "apps/client/src/app/components/TodoCardContainer/TodoCardsContainer.module.scss",
         "hash": "900501843592831527"
+      },
+      {
+        "file": "apps/client/src/app/components/TodoModal/TodoModal.module.scss",
+        "hash": "1474973664300697741"
+      },
+      {
+        "file": "apps/client/src/app/components/TodoModal/TodoModal.tsx",
+        "hash": "14075655328173162254",
+        "deps": [
+          "npm:@chakra-ui/react",
+          "npm:@chakra-ui/icons",
+          "npm:dayjs"
+        ]
       },
       {
         "file": "apps/client/src/app/components/common/AppLayout/AppLayout.module.scss",
@@ -217,15 +237,23 @@
         ]
       },
       {
-        "file": "apps/client/src/app/hooks/useIsAuthenticated.ts",
-        "hash": "5285817721423197258",
+        "file": "apps/client/src/app/context/AuthContext.tsx",
+        "hash": "15437770002911333558",
         "deps": [
-          "npm:jwt-decode"
+          "npm:react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/hooks/useTodos.ts",
+        "hash": "12057610094774633879",
+        "deps": [
+          "npm:react-query",
+          "npm:axios"
         ]
       },
       {
         "file": "apps/client/src/app/interfaces/interfaces.ts",
-        "hash": "14664790927924582968"
+        "hash": "13692926778736241029"
       },
       {
         "file": "apps/client/src/app/pages/LoginRegisterPage/LoginRegisterPage.tsx",
@@ -238,11 +266,20 @@
       },
       {
         "file": "apps/client/src/app/pages/TodosPage/TodosPage.tsx",
-        "hash": "10023462695818226315",
+        "hash": "6123793645988054121",
         "deps": [
-          "npm:react-query",
-          "npm:axios",
           "npm:@chakra-ui/react"
+        ]
+      },
+      {
+        "file": "apps/client/src/app/routes/ProtectedRoute.tsx",
+        "hash": "4663017665273502521"
+      },
+      {
+        "file": "apps/client/src/app/routes/Routes.tsx",
+        "hash": "17816693508197818876",
+        "deps": [
+          "npm:react-router-dom"
         ]
       },
       {

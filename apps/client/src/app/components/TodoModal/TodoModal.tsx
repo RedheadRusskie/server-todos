@@ -21,14 +21,12 @@ interface TodoModalProps {
   todo: Todo;
   isOpen: boolean;
   onClose: () => void;
-  finalRef: React.MutableRefObject<null>;
 }
 
 export const TodoModal: React.FC<TodoModalProps> = ({
   todo,
   isOpen,
   onClose,
-  finalRef,
 }) => {
   const formattedCreatedDate = dayjs(new Date(todo.last_updated)).format(
     'HH:mm on DD/MM/YYYY'
@@ -36,9 +34,7 @@ export const TodoModal: React.FC<TodoModalProps> = ({
 
   const { deleteMutation } = useTodos();
 
-  const handleDeleteClick = () => {
-    deleteMutation.mutate(todo.id);
-  };
+  const handleDeleteClick = () => deleteMutation.mutate(todo.id);
 
   const modalOverlay = (
     <ModalOverlay
@@ -52,7 +48,6 @@ export const TodoModal: React.FC<TodoModalProps> = ({
   return (
     <Modal
       scrollBehavior="inside"
-      finalFocusRef={finalRef}
       isOpen={isOpen}
       onClose={onClose}
       size={{ base: 'full', md: 'xl' }}

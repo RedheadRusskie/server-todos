@@ -1,9 +1,9 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
-import { LoginRegisterPage } from './pages/LoginRegisterPage/LoginRegisterPage';
-import { TodosPage } from './pages/TodosPage/TodosPage';
+import AuthProvider from './context/AuthContext';
+import Routes from './routes/Routes';
 
 const queryClient = new QueryClient();
 
@@ -38,20 +38,11 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
         <BrowserRouter>
-          <AppLayout>
-            <Routes>
-              <Route
-                path="login"
-                element={<LoginRegisterPage isFor="Login" />}
-              />
-              <Route
-                path="register"
-                element={<LoginRegisterPage isFor="Register" />}
-              />
-
-              <Route path="todos" element={<TodosPage />} />
-            </Routes>
-          </AppLayout>
+          <AuthProvider>
+            <AppLayout>
+              <Routes />
+            </AppLayout>
+          </AuthProvider>
         </BrowserRouter>
       </ChakraProvider>
     </QueryClientProvider>

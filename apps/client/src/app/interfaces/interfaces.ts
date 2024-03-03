@@ -46,3 +46,16 @@ export interface AuthRO {
   accessToken: string;
   userId: string;
 }
+
+export interface AuthState {
+  token: string | null;
+  userId: string | null;
+}
+
+export interface AuthAction {
+  type: string;
+  payload?: {
+    token: string | null;
+    userId: string | null;
+  };
+}

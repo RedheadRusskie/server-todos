@@ -1,105 +1,5 @@
 {
   "nodes": {
-    "client": {
-      "name": "client",
-      "type": "app",
-      "data": {
-        "name": "client",
-        "root": "apps/client",
-        "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/client/src",
-        "projectType": "application",
-        "targets": {
-          "build": {
-            "dependsOn": [
-              "^build"
-            ],
-            "inputs": [
-              "production",
-              "^production"
-            ],
-            "executor": "@nx/vite:build",
-            "outputs": [
-              "{options.outputPath}"
-            ],
-            "defaultConfiguration": "production",
-            "options": {
-              "outputPath": "dist/apps/client"
-            },
-            "configurations": {
-              "development": {
-                "mode": "development"
-              },
-              "production": {
-                "mode": "production"
-              }
-            }
-          },
-          "serve": {
-            "executor": "@nx/vite:dev-server",
-            "defaultConfiguration": "development",
-            "options": {
-              "buildTarget": "client:build"
-            },
-            "configurations": {
-              "development": {
-                "buildTarget": "client:build:development",
-                "hmr": true
-              },
-              "production": {
-                "buildTarget": "client:build:production",
-                "hmr": false
-              }
-            }
-          },
-          "preview": {
-            "executor": "@nx/vite:preview-server",
-            "defaultConfiguration": "development",
-            "options": {
-              "buildTarget": "client:build"
-            },
-            "configurations": {
-              "development": {
-                "buildTarget": "client:build:development"
-              },
-              "production": {
-                "buildTarget": "client:build:production"
-              }
-            }
-          },
-          "test": {
-            "cache": true,
-            "inputs": [
-              "default",
-              "^production"
-            ],
-            "executor": "@nx/vite:test",
-            "outputs": [
-              "{options.reportsDirectory}"
-            ],
-            "options": {
-              "reportsDirectory": "../../coverage/apps/client"
-            },
-            "configurations": {}
-          },
-          "lint": {
-            "inputs": [
-              "default",
-              "{workspaceRoot}/.eslintrc.json",
-              "{workspaceRoot}/.eslintignore"
-            ],
-            "executor": "@nx/eslint:lint",
-            "outputs": [
-              "{options.outputFile}"
-            ],
-            "options": {},
-            "configurations": {}
-          }
-        },
-        "tags": [],
-        "implicitDependencies": []
-      }
-    },
     "server": {
       "name": "server",
       "type": "app",
@@ -198,6 +98,106 @@
             "options": {
               "command": "docker build -f apps/server/Dockerfile . -t server"
             },
+            "configurations": {}
+          }
+        },
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "client": {
+      "name": "client",
+      "type": "app",
+      "data": {
+        "name": "client",
+        "root": "apps/client",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/client/src",
+        "projectType": "application",
+        "targets": {
+          "build": {
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "executor": "@nx/vite:build",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "outputPath": "dist/apps/client"
+            },
+            "configurations": {
+              "development": {
+                "mode": "development"
+              },
+              "production": {
+                "mode": "production"
+              }
+            }
+          },
+          "serve": {
+            "executor": "@nx/vite:dev-server",
+            "defaultConfiguration": "development",
+            "options": {
+              "buildTarget": "client:build"
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "client:build:development",
+                "hmr": true
+              },
+              "production": {
+                "buildTarget": "client:build:production",
+                "hmr": false
+              }
+            }
+          },
+          "preview": {
+            "executor": "@nx/vite:preview-server",
+            "defaultConfiguration": "development",
+            "options": {
+              "buildTarget": "client:build"
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "client:build:development"
+              },
+              "production": {
+                "buildTarget": "client:build:production"
+              }
+            }
+          },
+          "test": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production"
+            ],
+            "executor": "@nx/vite:test",
+            "outputs": [
+              "{options.reportsDirectory}"
+            ],
+            "options": {
+              "reportsDirectory": "../../coverage/apps/client"
+            },
+            "configurations": {}
+          },
+          "lint": {
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {},
             "configurations": {}
           }
         },
@@ -18758,83 +18758,6 @@
     }
   },
   "dependencies": {
-    "client": [
-      {
-        "source": "client",
-        "target": "npm:react-router-dom",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:react-query",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:@chakra-ui/react",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:react",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:axios",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:react-hook-form",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:dayjs",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:@chakra-ui/icons",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:jwt-decode",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:@fontsource-variable/montserrat",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:framer-motion",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:react-dom",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:vite",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:@vitejs/plugin-react",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:@nx/vite",
-        "type": "static"
-      }
-    ],
     "server": [
       {
         "source": "server",
@@ -18894,6 +18817,78 @@
       {
         "source": "server",
         "target": "npm:@nx/webpack",
+        "type": "static"
+      }
+    ],
+    "client": [
+      {
+        "source": "client",
+        "target": "npm:axios",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:react-query",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@chakra-ui/react",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:react-hook-form",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:dayjs",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@chakra-ui/icons",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@fontsource-variable/montserrat",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:vite",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@vitejs/plugin-react",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@nx/vite",
         "type": "static"
       }
     ],

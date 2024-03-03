@@ -1,0 +1,57 @@
+import { useMutation, useQuery, useQueryClient } from 'react-query';
+import axios, { AxiosError, AxiosResponse } from 'axios';
+import { Todo } from '../interfaces/interfaces';
+import { useAuth } from '../context/AuthContext';
+
+const todosQueryKeys = {
+  todos: 'todos',
+  deleteTodo: 'deleteTodo',
+};
+
+export const useTodos = () => {
+  const queryClient = useQueryClient();
+  const { token, userId } = useAuth();
+  const baseEndpoint = `${import.meta.env.VITE_SERVER_BASE_URL}/todos`;
+  const headers = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
+
+  const fetchTodosRequest = (): Promise<Todo[]> =>
+    axios
+      .get(`${baseEndpoint}/getTodosByUser/${userId}`, headers)
+      .then((res: AxiosResponse) => res.data);
+
+  const {
+    isLoading: todoLoading,
+    data: todos,
+    error: todoFetchError,
+  } = useQuery<Todo[], AxiosError>({
+    queryKey: [todosQueryKeys.todos],
+    queryFn: fetchTodosRequest,
+  });
+
+  const sendTodosDeleteRequest = (todoId: string): Promise<number> =>
+    axios
+      .delete(`${baseEndpoint}/${todoId}`, headers)
+      .then((res: AxiosResponse) => res.data);
+
+  const deleteMutation = useMutation(
+    (todoId: string) => sendTodosDeleteRequest(todoId),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries({ queryKey: [todosQueryKeys.todos] });
+      },
+      onError: (error) => {
+        if (
+          error instanceof Error ||
+          (error instanceof AxiosError && error.message)
+        )
+          throw new Error('Error fetching to-dos: ' + error.message);
+      },
+    }
+  );
+
+  return { todoLoading, todos, todoFetchError, deleteMutation };
+};
