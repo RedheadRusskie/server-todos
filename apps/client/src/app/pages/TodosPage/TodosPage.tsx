@@ -1,37 +1,19 @@
-import { useQuery } from 'react-query';
-import axios, { AxiosResponse } from 'axios';
 import { useToast } from '@chakra-ui/react';
 import { CustomToast } from '../../components/common/CustomToast/CustomToast';
 import { AppSpinner } from '../../components/common/AppSpinner/AppSpinner';
 import { sortTodosByUpdateDate } from '../../utils';
-import { TodoCard } from '../../components/TodoCard/ToDoCard';
+import { TodoCard } from '../../components/TodoCard/TodoCard';
 import { TodoCardsContainer } from '../../components/TodoCardContainer/TodoCardSContainer';
+import { useTodos } from '../../hooks/useTodos';
 
 export const TodosPage: React.FC = () => {
-  const todosEndpoint = `${
-    import.meta.env.VITE_SERVER_BASE_URL
-  }/todos/getTodosByUser/${localStorage.getItem('userID')}`;
   const toast = useToast();
+  const { todoLoading, todos, todoFetchError } = useTodos();
+  const sortedTodos = todos ? sortTodosByUpdateDate(todos) : null;
 
-  const sendLoginRequest = () =>
-    axios
-      .get(todosEndpoint, {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem('accessToken')}`,
-        },
-      })
-      .then((res: AxiosResponse) => res.data);
+  if (todoLoading) return <AppSpinner />;
 
-  const { isLoading, data, error } = useQuery({
-    queryKey: ['todos'],
-    queryFn: sendLoginRequest,
-  });
-
-  const sortedTodos = data ? sortTodosByUpdateDate(data) : null;
-
-  if (isLoading) return <AppSpinner />;
-
-  if (error)
+  if (todoFetchError)
     return toast({
       position: 'top',
       duration: 2000,

@@ -10,10 +10,10 @@ interface TodoCardProps {
 }
 
 export const TodoCard: React.FC<TodoCardProps> = ({ todo }) => {
-  const lastUpdateDate = dayjs().to(dayjs.utc(new Date(todo.last_updated)));
-
   dayjs.extend(utc);
   dayjs.extend(relativeTime);
+
+  const lastUpdateDate = dayjs().to(dayjs.utc(new Date(todo.last_updated)));
 
   const setBorderColor = () =>
     `5px solid ${todo.complete ? '#68D391' : '#E53E3E'}`;

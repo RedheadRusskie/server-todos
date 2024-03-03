@@ -5,18 +5,19 @@ export interface Todo {
   body: string;
   complete: boolean;
   added: Date;
-  last_updated: Date; 
+  last_updated: Date;
 }
 
+export interface UserRole {
+  id: number;
+}
 export interface UserData {
   id: string;
   todos: Todo[];
   added: string;
   last_login: string;
   username: string;
-  role: {
-    id: number;
-  };
+  role: UserRole;
 }
 
 export interface LoginFormInput {

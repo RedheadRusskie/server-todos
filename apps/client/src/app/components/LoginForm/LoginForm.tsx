@@ -64,7 +64,8 @@ export const LoginForm: React.FC = () => {
           <CustomToast type="success" message="Successfully logged in." />
         ),
       });
-
+    },
+    onSettled: () => {
       navigate('/todos');
     },
   });

@@ -1,10 +1,9 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
 import { LoginRegisterPage } from './pages/LoginRegisterPage/LoginRegisterPage';
 import { TodosPage } from './pages/TodosPage/TodosPage';
-import { useIsAuthenticated } from './hooks/useIsAuthenticated';
 
 const queryClient = new QueryClient();
 
@@ -25,14 +24,16 @@ const theme = extendTheme({
         color: '#665080',
         _hover: { color: '#665080' },
         _active: { color: '#665080' },
+        _focus: {
+          boxShadow: '#665080',
+          outline: 'none',
+        },
       },
     },
   },
 });
 
 function App() {
-  const isUserAuthenticated = useIsAuthenticated();
-
   return (
     <QueryClientProvider client={queryClient}>
       <ChakraProvider theme={theme}>
@@ -40,36 +41,15 @@ function App() {
           <AppLayout>
             <Routes>
               <Route
-                index
-                element={
-                  !isUserAuthenticated ? (
-                    <LoginRegisterPage isFor="Login" />
-                  ) : (
-                    <Navigate to="/todos" replace />
-                  )
-                }
-                path="/login"
+                path="login"
+                element={<LoginRegisterPage isFor="Login" />}
               />
               <Route
-                element={
-                  !isUserAuthenticated ? (
-                    <LoginRegisterPage isFor="Register" />
-                  ) : (
-                    <Navigate to="/todos" replace />
-                  )
-                }
-                path="/register"
+                path="register"
+                element={<LoginRegisterPage isFor="Register" />}
               />
-              <Route
-                element={
-                  isUserAuthenticated ? (
-                    <TodosPage />
-                  ) : (
-                    <Navigate to="/login" replace />
-                  )
-                }
-                path="/todos"
-              />
+
+              <Route path="todos" element={<TodosPage />} />
             </Routes>
           </AppLayout>
         </BrowserRouter>
