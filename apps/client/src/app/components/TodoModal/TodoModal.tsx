@@ -142,7 +142,6 @@ export const TodoModal: React.FC<TodoModalProps> = ({
           <ModalFooter>
             <Box flex="1" textAlign="right">
               <Button
-                type="submit"
                 width="100%"
                 color="#665080"
                 variant="ghost"
