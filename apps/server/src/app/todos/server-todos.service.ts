@@ -6,7 +6,7 @@ import {
 import { EntityManager, EntityRepository } from '@mikro-orm/postgresql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 import { ToDoEntity } from './entities';
-import { AddTodoDto, ToDoDto, UpdateToDoDto } from './dto';
+import { AddTodoDto, UpdateToDoDto } from './dto';
 import { CurrentUser, UserEntity } from '../user';
 import { UserDto } from '../user/dto';
 
@@ -78,9 +78,7 @@ export class ToDosService {
       },
     });
 
-    if (!todos || todos.length === 0) {
-      throw new NotFoundException(`No todos found for user with ID: ${userId}`);
-    }
+    if (!todos || todos.length === 0) return [];
 
     return todos;
   }
