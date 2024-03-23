@@ -4,6 +4,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { AppLayout } from './components/common/AppLayout/AppLayout';
 import AuthProvider from './context/AuthContext';
 import Routes from './routes/Routes';
+import { Navbar } from './components/Navbar/Navbar';
 
 const queryClient = new QueryClient();
 
@@ -40,6 +41,7 @@ function App() {
         <BrowserRouter>
           <AuthProvider>
             <AppLayout>
+              <Navbar />
               <Routes />
             </AppLayout>
           </AuthProvider>
