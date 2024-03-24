@@ -1,18 +1,16 @@
-import { useLocation } from 'react-router-dom';
-import { Box, Flex, IconButton } from '@chakra-ui/react';
+import { Box, Flex, IconButton, Input } from '@chakra-ui/react';
 import { useMediaQuery } from '@chakra-ui/react';
 import { AddIcon } from '@chakra-ui/icons';
 import { motion } from 'framer-motion';
 
-export const Navbar: React.FC = () => {
-  const currentRoute = useLocation();
+interface NavbarProps {
+  handleSearch: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ handleSearch }) => {
   const [isSmallScreen] = useMediaQuery('(max-width: 768px)');
 
-  function determineWidth() {
-    return isSmallScreen ? '89%' : '30em';
-  }
-
-  if (currentRoute.pathname !== '/todos') return;
+  const determineWidth = () => (isSmallScreen ? '89%' : '30em');
 
   return (
     <Flex
@@ -38,18 +36,24 @@ export const Navbar: React.FC = () => {
           minH="3em"
           display="flex"
           alignItems="center"
-          paddingX="0.3em"
+          paddingRight="0.3em"
+          paddingLeft="1em"
           boxShadow="0 4px 13px rgba(0, 0, 0, 0.1)"
         >
-          <Box marginLeft="auto">
-            <IconButton
-              aria-label="Add todo"
-              background="#665080"
-              borderRadius="full"
-              _hover={{ background: '#7C619F' }}
-              icon={<AddIcon color="white" />}
-            />
-          </Box>
+          <Input
+            maxWidth="25em"
+            marginLeft="auto"
+            variant="unstyled"
+            placeholder="Search"
+          />
+          <IconButton
+            aria-label="Add todo"
+            marginLeft="auto"
+            background="#7C619F"
+            borderRadius="full"
+            _hover={{ background: '#665080' }}
+            icon={<AddIcon color="white" />}
+          />
         </Box>
       </motion.div>
     </Flex>
