@@ -45,6 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ handleSearch }) => {
             marginLeft="auto"
             variant="unstyled"
             placeholder="Search"
+            onChange={handleSearch}
           />
           <IconButton
             aria-label="Add todo"

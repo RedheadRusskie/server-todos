@@ -91,4 +91,18 @@ export class ToDosService {
         throw new NotFoundException('To-do not found.');
       });
   }
+
+  async findRecordBySearchValue(
+    @CurrentUser() user: UserDto,
+    searchValue: string
+  ) {
+    const todos = await this.toDoRepository.find({
+      $or: [
+        { name: { $ilike: `%${searchValue}%` } },
+        { body: { $like: `%${searchValue}%` } },
+      ],
+      user: user.id,
+    });
+    return todos;
+  }
 }

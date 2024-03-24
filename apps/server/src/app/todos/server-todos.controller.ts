@@ -67,4 +67,13 @@ export class ToDosController {
   ): Promise<number> {
     return this.todosService.removeRecordById(user, id);
   }
+
+  @Get('search/:searchValue')
+  @RequiredRoles(Role.Superuser, Role.User)
+  async findRecordBySearchValue(
+    @CurrentUser() user,
+    @Param('searchValue') searchValue: string
+  ): Promise<ToDoDto[]> {
+    return this.todosService.findRecordBySearchValue(user, searchValue);
+  }
 }
