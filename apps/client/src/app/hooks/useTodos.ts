@@ -78,5 +78,22 @@ export const useTodos = () => {
     }
   );
 
-  return { todoLoading, todos, todoFetchError, deleteMutation, updateMutation };
+  const sendTodosSearchRequest = async (
+    searchTerm: string
+  ): Promise<Todo[]> => {
+    const response = await axios.get(
+      `${baseEndpoint}/search/${searchTerm}`,
+      headers
+    );
+    return response.data;
+  };
+
+  return {
+    todoLoading,
+    todos,
+    todoFetchError,
+    deleteMutation,
+    updateMutation,
+    sendTodosDeleteRequest,
+  };
 };
