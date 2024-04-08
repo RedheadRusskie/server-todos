@@ -32,6 +32,27 @@ export const useTodos = () => {
     queryFn: fetchTodosRequest,
   });
 
+  const sendTodosPostRequest = (todo: Partial<Todo>): Promise<number> =>
+    axios
+      .post(baseEndpoint, todo, headers)
+      .then((res: AxiosResponse) => res.data);
+
+  const postMutation = useMutation(
+    (todo: Partial<Todo>) => sendTodosPostRequest(todo),
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries({ queryKey: [todosQueryKeys.todos] });
+      },
+      onError: (error) => {
+        if (
+          error instanceof Error ||
+          (error instanceof AxiosError && error.message)
+        )
+          throw new Error('Error posting to-do: ' + error.message);
+      },
+    }
+  );
+
   const sendTodosDeleteRequest = (todoId: string): Promise<number> =>
     axios
       .delete(`${baseEndpoint}/${todoId}`, headers)
@@ -48,7 +69,7 @@ export const useTodos = () => {
           error instanceof Error ||
           (error instanceof AxiosError && error.message)
         )
-          throw new Error('Error fetching to-dos: ' + error.message);
+          throw new Error('Error removing to-do: ' + error.message);
       },
     }
   );
@@ -73,11 +94,12 @@ export const useTodos = () => {
           error instanceof Error ||
           (error instanceof AxiosError && error.message)
         )
-          throw new Error('Error editing todo' + error.message);
+          throw new Error('Error editing to-do' + error.message);
       },
     }
   );
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const sendTodosSearchRequest = async (
     searchTerm: string
   ): Promise<Todo[]> => {
@@ -92,6 +114,7 @@ export const useTodos = () => {
     todoLoading,
     todos,
     todoFetchError,
+    postMutation,
     deleteMutation,
     updateMutation,
     sendTodosDeleteRequest,

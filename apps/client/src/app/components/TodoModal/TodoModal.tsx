@@ -19,34 +19,34 @@ import styles from './TodoModal.module.scss';
 import { DeleteIcon } from '@chakra-ui/icons';
 import dayjs from 'dayjs';
 import { useTodos } from '../../hooks/useTodos';
+import { useAuth } from '../../context/AuthContext';
 
 interface TodoModalProps {
-  todo: Todo;
+  todo?: Todo;
   isOpen: boolean;
   onClose: () => void;
+  addTodoMode?: boolean;
 }
 
 export const TodoModal: React.FC<TodoModalProps> = ({
   todo,
   isOpen,
   onClose,
+  addTodoMode,
 }) => {
-  const formattedCreatedDate = dayjs(new Date(todo.last_updated)).format(
-    'HH:mm on DD/MM/YYYY'
-  );
+  const formattedCreatedDate = !todo
+    ? null
+    : dayjs(new Date(todo.last_updated)).format('HH:mm on DD/MM/YYYY');
   const { register, handleSubmit } = useForm<Todo>();
-  const { deleteMutation, updateMutation } = useTodos();
+  const { deleteMutation, updateMutation, postMutation } = useTodos();
+  const { userId: currentUserId } = useAuth();
 
-  const modalOverlay = (
-    <ModalOverlay
-      bg="none"
-      backdropFilter="auto"
-      backdropBlur="2px"
-      backgroundColor="rgba(0, 0, 0, 0.15)"
-    />
-  );
+  const handleAddTodo = async (todo: Partial<Todo>) =>
+    await postMutation.mutateAsync({ ...todo, user: currentUserId as string });
 
-  const onSubmit = async (editedTodo: Todo) => {
+  const handleUpdateTodo = async (editedTodo: Todo) => {
+    if (!todo) return;
+
     const data = {
       todoId: todo.id,
       todo: {
@@ -57,10 +57,27 @@ export const TodoModal: React.FC<TodoModalProps> = ({
       },
     };
 
-    updateMutation.mutateAsync(data);
+    return await updateMutation.mutateAsync(data);
   };
 
-  const handleDelete = () => deleteMutation.mutateAsync(todo.id);
+  const handleDelete = () => {
+    if (todo === undefined) return;
+    deleteMutation.mutateAsync(todo.id);
+  };
+
+  const onSubmit = (todo: Todo) => {
+    if (!addTodoMode) return handleUpdateTodo(todo);
+    return handleAddTodo(todo);
+  };
+
+  const modalOverlay = (
+    <ModalOverlay
+      bg="none"
+      backdropFilter="auto"
+      backdropBlur="2px"
+      backgroundColor="rgba(0, 0, 0, 0.15)"
+    />
+  );
 
   return (
     <Modal
@@ -77,7 +94,7 @@ export const TodoModal: React.FC<TodoModalProps> = ({
       <ModalContent className={styles.todoModal}>
         <ModalHeader>
           <Textarea
-            defaultValue={todo.name}
+            defaultValue={!addTodoMode ? todo?.name : 'New todo'}
             autoFocus={false}
             size="sm"
             variant="unstyled"
@@ -93,15 +110,19 @@ export const TodoModal: React.FC<TodoModalProps> = ({
             {...register('name')}
           />
 
-          <Text color="#718096" fontSize="0.9rem" textTransform="uppercase">
-            Created at {formattedCreatedDate}
-          </Text>
+          {!addTodoMode && (
+            <Text color="#718096" fontSize="0.9rem" textTransform="uppercase">
+              Created at {formattedCreatedDate}
+            </Text>
+          )}
         </ModalHeader>
         <ModalCloseButton />
         <form onSubmit={handleSubmit(onSubmit)}>
           <ModalBody>
             <Textarea
-              defaultValue={todo.body}
+              defaultValue={
+                !addTodoMode ? todo?.body : 'Todo description here..'
+              }
               autoFocus={false}
               variant="unstyled"
               style={{
@@ -131,7 +152,7 @@ export const TodoModal: React.FC<TodoModalProps> = ({
               }}
               iconColor="white"
               borderColor="#665080"
-              defaultChecked={todo.complete}
+              defaultChecked={!addTodoMode ? todo?.complete : false}
               size="lg"
               float="right"
               {...register('complete')}
@@ -141,16 +162,18 @@ export const TodoModal: React.FC<TodoModalProps> = ({
           </ModalBody>
           <ModalFooter>
             <Box flex="1" textAlign="right">
-              <Button
-                width="100%"
-                color="#665080"
-                variant="ghost"
-                leftIcon={<DeleteIcon color="#665080" />}
-                _hover={{ background: 'rgb(255, 255, 255, 0.3)' }}
-                onClick={handleDelete}
-              >
-                Remove to-do
-              </Button>
+              {!addTodoMode && (
+                <Button
+                  width="100%"
+                  color="#665080"
+                  variant="ghost"
+                  leftIcon={<DeleteIcon />}
+                  _hover={{ background: 'rgb(255, 255, 255, 0.3)' }}
+                  onClick={handleDelete}
+                >
+                  Remove todo
+                </Button>
+              )}
             </Box>
           </ModalFooter>
         </form>
