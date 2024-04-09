@@ -51,6 +51,14 @@ export class ToDosController {
     return this.todosService.findRecordById(id);
   }
 
+  @Get('getTodosByUser/:id')
+  @RequiredRoles(Role.Superuser, Role.User)
+  async findRecordsByUserId(
+    @Param('id', ParseUUIDPipe) id: string
+  ): Promise<ToDoDto[]> {
+    return this.todosService.findRecordsByUserId(id);
+  }
+
   @Delete(':id')
   @RequiredRoles(Role.Superuser, Role.User)
   async removeRecordById(
@@ -58,5 +66,14 @@ export class ToDosController {
     @Param('id', ParseUUIDPipe) id: string
   ): Promise<number> {
     return this.todosService.removeRecordById(user, id);
+  }
+
+  @Get('search/:searchValue')
+  @RequiredRoles(Role.Superuser, Role.User)
+  async findRecordBySearchValue(
+    @CurrentUser() user,
+    @Param('searchValue') searchValue: string
+  ): Promise<ToDoDto[]> {
+    return this.todosService.findRecordBySearchValue(user, searchValue);
   }
 }

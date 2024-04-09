@@ -37,9 +37,17 @@ export class UserController {
     return this.userService.findRecordById(id);
   }
 
-  @Get('getUserByUsername/:username')
+  @Get('getUserByUsernameWithPassword/:username')
   @RequiredRoles(Role.Superuser)
   async findUserbyId(@Param('username') username: string): Promise<UserDto> {
+    return this.userService.findRecordByUsernameWithPassword(username);
+  }
+
+  @Get('getUserByUsername/:username')
+  @RequiredRoles(Role.Superuser)
+  async findUserbyIdWithoutPassword(
+    @Param('username') username: string
+  ): Promise<UserDto> {
     return this.userService.findRecordByUsername(username);
   }
 

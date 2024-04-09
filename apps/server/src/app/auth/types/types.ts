@@ -3,3 +3,8 @@ export interface JwtPayload {
   iat?: number;
   exp?: number;
 }
+
+export interface AuthRO {
+  accessToken: string;
+  userId: string;
+}

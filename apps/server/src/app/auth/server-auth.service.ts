@@ -3,6 +3,7 @@ import { JwtService } from '@nestjs/jwt';
 import bcrypt from 'bcrypt';
 import { UserEntity, UserService } from '../user';
 import { AuthDto } from './dto';
+import { AuthRO } from './types';
 
 @Injectable()
 export class AuthService {
@@ -29,19 +30,20 @@ export class AuthService {
     return user;
   }
 
-  async login(userAuthDto: AuthDto): Promise<{ accessToken: string }> {
+  async login(userAuthDto: AuthDto): Promise<AuthRO> {
     const payload = { sub: userAuthDto.username };
 
-    const isValidUser = await this.validateUser(
+    const validUser = await this.validateUser(
       userAuthDto.username,
       userAuthDto.password
     );
 
-    if (!isValidUser)
+    if (!validUser)
       throw new UnauthorizedException('Incorrect username or password');
 
     return {
       accessToken: this.jwtService.sign(payload),
+      userId: validUser.id,
     };
   }
 }

@@ -2,6 +2,7 @@ import { Controller, Post, Request } from '@nestjs/common';
 import { AuthService } from './server-auth.service';
 import { UserEntity } from '../user';
 import { IsPublic } from './decorators';
+import { AuthRO } from './types';
 
 @Controller('auth')
 export class AuthController {
@@ -9,9 +10,10 @@ export class AuthController {
 
   @Post('login')
   @IsPublic()
-  async login(@Request() req): Promise<{ accessToken: string }> {
+  async login(@Request() req): Promise<AuthRO> {
     const user = req.body;
     const token = await this.authService.login(user);
+
     return token;
   }
 
