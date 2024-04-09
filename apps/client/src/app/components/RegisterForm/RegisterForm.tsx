@@ -38,6 +38,7 @@ export const RegisterForm: React.FC = () => {
   const toast = useToast();
   const usersEndpoint = 'http://localhost:3000/api/users';
 
+  // TODO: Refactor with dedicated hook
   const sendRegisterRequest = async (
     data: RegisterFormInput
   ): Promise<UserData> => {

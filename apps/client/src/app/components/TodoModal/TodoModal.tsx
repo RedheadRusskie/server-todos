@@ -1,9 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import {
-  Box,
   Button,
   Checkbox,
+  Flex,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -16,7 +16,7 @@ import {
 } from '@chakra-ui/react';
 import { Todo } from '../../interfaces/interfaces';
 import styles from './TodoModal.module.scss';
-import { DeleteIcon } from '@chakra-ui/icons';
+import { AddIcon, DeleteIcon, EditIcon } from '@chakra-ui/icons';
 import dayjs from 'dayjs';
 import { useTodos } from '../../hooks/useTodos';
 import { useAuth } from '../../context/AuthContext';
@@ -37,7 +37,7 @@ export const TodoModal: React.FC<TodoModalProps> = ({
   const formattedCreatedDate = !todo
     ? null
     : dayjs(new Date(todo.last_updated)).format('HH:mm on DD/MM/YYYY');
-  const { register, handleSubmit } = useForm<Todo>();
+  const { register, handleSubmit, reset } = useForm<Todo>();
   const { deleteMutation, updateMutation, postMutation } = useTodos();
   const { userId: currentUserId } = useAuth();
 
@@ -60,14 +60,23 @@ export const TodoModal: React.FC<TodoModalProps> = ({
     return await updateMutation.mutateAsync(data);
   };
 
-  const handleDelete = () => {
+  const handleDelete = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    event.preventDefault();
+
     if (todo === undefined) return;
-    deleteMutation.mutateAsync(todo.id);
+
+    return deleteMutation.mutateAsync(todo.id);
   };
 
-  const onSubmit = (todo: Todo) => {
-    if (!addTodoMode) return handleUpdateTodo(todo);
-    return handleAddTodo(todo);
+  const onSubmit = (formTodo: Todo) => {
+    if (addTodoMode) {
+      handleAddTodo(formTodo);
+      reset();
+    } else handleUpdateTodo(formTodo);
+
+    onClose();
   };
 
   const modalOverlay = (
@@ -83,10 +92,7 @@ export const TodoModal: React.FC<TodoModalProps> = ({
     <Modal
       scrollBehavior="inside"
       isOpen={isOpen}
-      onClose={() => {
-        handleSubmit(onSubmit)();
-        onClose();
-      }}
+      onClose={onClose}
       size={{ base: 'full', md: 'xl' }}
       motionPreset="slideInBottom"
     >
@@ -98,15 +104,13 @@ export const TodoModal: React.FC<TodoModalProps> = ({
             autoFocus={false}
             size="sm"
             variant="unstyled"
-            style={{
-              fontSize: '3rem',
-              fontWeight: 'bold',
-              border: 'none',
-              maxHeight: '1em',
-              height: '0.5em',
-              resize: 'none',
-              width: '90%',
-            }}
+            fontSize="3rem"
+            fontWeight="bold"
+            border="none"
+            maxHeight="1em"
+            height="0.5em"
+            resize="none"
+            width="90%"
             {...register('name')}
           />
 
@@ -123,16 +127,15 @@ export const TodoModal: React.FC<TodoModalProps> = ({
               defaultValue={
                 !addTodoMode ? todo?.body : 'Todo description here..'
               }
+              resize="none"
               autoFocus={false}
               variant="unstyled"
-              style={{
-                marginTop: '-1em',
-                border: 'none',
-                padding: '1em',
-                height: '40vh',
-                marginBottom: '1em',
-                fontSize: '1.5rem',
-              }}
+              marginTop="-1em"
+              border="none"
+              padding="1em"
+              height="40vh"
+              marginBottom="1em"
+              fontSize="1.5rem"
               {...register('body')}
             />
             <Checkbox
@@ -161,20 +164,45 @@ export const TodoModal: React.FC<TodoModalProps> = ({
             </Checkbox>
           </ModalBody>
           <ModalFooter>
-            <Box flex="1" textAlign="right">
+            <Flex width="100%">
+              {addTodoMode && (
+                <Button
+                  type="submit"
+                  width="100%"
+                  color="#665080"
+                  variant="ghost"
+                  leftIcon={<AddIcon />}
+                  _hover={{ background: 'rgb(255, 255, 255, 0.3)' }}
+                >
+                  Add todo
+                </Button>
+              )}
               {!addTodoMode && (
                 <Button
+                  type="submit"
+                  onClick={(event) => handleDelete(event)}
                   width="100%"
                   color="#665080"
                   variant="ghost"
                   leftIcon={<DeleteIcon />}
                   _hover={{ background: 'rgb(255, 255, 255, 0.3)' }}
-                  onClick={handleDelete}
                 >
                   Remove todo
                 </Button>
               )}
-            </Box>
+              {!addTodoMode && (
+                <Button
+                  type="submit"
+                  width="100%"
+                  color="#665080"
+                  variant="ghost"
+                  leftIcon={<EditIcon />}
+                  _hover={{ background: 'rgb(255, 255, 255, 0.3)' }}
+                >
+                  Edit todo
+                </Button>
+              )}
+            </Flex>
           </ModalFooter>
         </form>
       </ModalContent>

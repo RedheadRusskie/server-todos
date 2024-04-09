@@ -6,10 +6,12 @@ import {
   useReducer,
 } from 'react';
 import { AuthAction, AuthState } from '../interfaces/interfaces';
+import { useNavigate } from 'react-router-dom';
 
 interface AuthContextType extends AuthState {
   setToken: (newToken: string, newUserID: string) => void;
   clearToken: () => void;
+  logout: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -43,6 +45,7 @@ const initialData: AuthState = {
 
 const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialData);
+  const navigate = useNavigate();
 
   const setToken = (newToken: string, newUserID: string) => {
     localStorage.setItem('accessToken', newToken);
@@ -60,11 +63,17 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     dispatch({ type: ACTIONS.clearToken });
   };
 
+  const logout = () => {
+    clearToken();
+    navigate('/login');
+  };
+
   const contextValue = useMemo(
     () => ({
       ...state,
       setToken,
       clearToken,
+      logout,
     }),
     [state]
   );

@@ -37,6 +37,7 @@ export const LoginForm: React.FC = () => {
   const loginEndpoint = `${import.meta.env.VITE_SERVER_BASE_URL}/auth/login`;
   const { setToken } = useAuth();
 
+  // TODO: Refactor with dedicated hook
   const sendLoginRequest = (
     data: LoginFormInput
   ): Promise<{ accessToken: string; userId: string }> =>
